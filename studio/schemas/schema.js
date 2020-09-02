@@ -4,6 +4,11 @@ import createSchema from "part:@sanity/base/schema-creator";
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
+import bread from "./menu/bread";
+import drinks from "./menu/drinks";
+import coffee from "./menu/coffee";
+import food from "./menu/food";
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -12,26 +17,9 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
-    {
-      name: "post",
-      type: "document",
-      title: "Post",
-      fields: [
-        {
-          name: "title",
-          type: "string",
-          title: "Title",
-        },
-        {
-          name: "slug",
-          type: "slug",
-          title: "Slug",
-          options: {
-            //The source option defines what field Sanity will use to generate the slug
-            source: "title",
-          },
-        },
-      ],
-    },
+    bread,
+    drinks,
+    coffee,
+    food,
   ]),
 });
