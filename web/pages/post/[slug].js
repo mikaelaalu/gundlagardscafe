@@ -1,22 +1,23 @@
+import groq from "groq";
 import client from "../../client";
 
 const Post = (props) => {
+  const { title = "" } = props;
   console.log(props);
+  console.log("slug js file");
   return (
     <article>
-      <h1>{props.title}</h1>
+      <h1>{title}</h1>
     </article>
   );
 };
 
-Post.getInitialProps = async function (context) {
+Post.getInitialProps = async function () {
   // It's important to default the slug so that it doesn't return "undefined"
-  const { slug = "" } = context.query;
   return await client.fetch(
-    `
-    *[_type == "post" && slug.current == $slug][0]
-  `,
-    { slug }
+    groq`
+    *
+  `
   );
 };
 

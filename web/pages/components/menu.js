@@ -2,14 +2,20 @@ import groq from "groq";
 import client from "../../client";
 
 const Menu = (props) => {
+  const { title = "" } = props;
   console.log(props);
-  return <h1>Hej</h1>;
+  console.log("menu.js file working but not props");
+  return <h1>{title || "default hej"}</h1>;
 };
 
-Menu.getInitialProps = async () => ({
-  posts: await client.fetch(groq`
-      *[]
-      `),
-});
+Menu.getInitialProps = async function () {
+  const res = await client.fetch(
+    groq`
+    *
+  `
+  );
+
+  return res;
+};
 
 export default Menu;
