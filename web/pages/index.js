@@ -1,12 +1,11 @@
 // import Menu from "./components/menu";
 import groq from "groq";
 import client from "../client";
-import OpeningHours from "./components/openingHours";
-import Menu from "./components/menu";
-import FindUs from "./components/findUs";
+import OpeningHours from "./components/OpeningHours";
+import Menu from "./components/Menu";
+import FindUs from "./components/FindUs";
 
 const Index = (props) => {
-  console.log(props.findUs);
   return (
     <div>
       <p>Home!</p>
