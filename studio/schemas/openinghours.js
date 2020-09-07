@@ -1,5 +1,5 @@
 export default {
-  name: "openinghours",
+  name: "openingHours",
   type: "document",
   title: "Öppettider",
   fields: [
