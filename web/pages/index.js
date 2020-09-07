@@ -5,6 +5,7 @@ import Menu from "./components/Menu";
 import FindUs from "./components/FindUs";
 import Footer from "./components/Footer";
 const Index = (props) => {
+  console.log(props);
   return (
     <div>
       <p>Home!</p>
@@ -20,6 +21,7 @@ const query = groq`{
   "openingHours": (*[_type == 'openingHours']),
   "menu": (*[_type == 'menu']),
   "findUs": (*[_type == 'findUs']),
+  "event": (*[_type == 'event']),
   "footer": (*[_type == 'footer'])
 }`;
 
