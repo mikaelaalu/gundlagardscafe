@@ -7,7 +7,7 @@ const Post = (props) => {
   console.log("slug js file");
   return (
     <article>
-      <h1>{title}</h1>
+      <h1>{title || "slug"}</h1>
     </article>
   );
 };
