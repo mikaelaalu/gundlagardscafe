@@ -6,6 +6,7 @@ import Menu from "./components/Menu";
 import FindUs from "./components/FindUs";
 
 const Index = (props) => {
+  console.log(props);
   return (
     <div>
       <p>Home!</p>
@@ -19,7 +20,8 @@ const Index = (props) => {
 const query = groq`{
   "openingHours": (*[_type == 'openingHours']),
   "menu": (*[_type == 'menu']),
-  "findUs": (*[_type == 'findUs'])
+  "findUs": (*[_type == 'findUs']),
+  "event": (*[_type == 'event'])
 }`;
 
 Index.getInitialProps = async function () {
