@@ -1,22 +1,21 @@
-import Menu from "./components/menu";
+// import Menu from "./components/menu";
 import groq from "groq";
 import client from "../client";
+import OpeningHours from "./components/openingHours";
 
 const Index = (props) => {
-  // const { title = "" } = props;
-  console.log(props);
-  console.log(props[0].menuText[0].children[0].text);
-  console.log("index.js file not working");
-
   return (
     <div>
       <p>Home!</p>
-      <Menu />
+      <OpeningHours props={props.OpeningHours[0]} />
     </div>
   );
 };
 
-const query = groq`*`;
+const query = groq`{
+  "OpeningHours": (*[_type == 'openinghours']),
+  "Menu": (*[_type == 'menu'])
+}`;
 
 Index.getInitialProps = async function () {
   const res = await client.fetch(query);
