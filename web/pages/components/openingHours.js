@@ -1,5 +1,4 @@
 const OpeningHours = ({ props }) => {
-  console.log(props);
   return (
     <div>
       <h2>{props.titleOpening}</h2>

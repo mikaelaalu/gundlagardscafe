@@ -2,12 +2,14 @@
 import groq from "groq";
 import client from "../client";
 import OpeningHours from "./components/openingHours";
+import Menu from "./components/menu";
 
 const Index = (props) => {
   return (
     <div>
       <p>Home!</p>
       <OpeningHours props={props.OpeningHours[0]} />
+      <Menu props={props.Menu} />
     </div>
   );
 };

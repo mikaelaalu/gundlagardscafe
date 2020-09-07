@@ -1,21 +1,12 @@
-// import groq from "groq";
-// import client from "../../client";
+import PortableText from "@sanity/block-content-to-react";
 
-// const Menu = (props) => {
-//   const { title = "" } = props;
-//   console.log(props);
-//   console.log("menu.js file working but not props");
-//   return <h1>{title || "default hej"}</h1>;
-// };
+const Menu = ({ props }) => {
+  return (
+    <div>
+      <h2>{props[0].titleMenu}</h2>
+      <PortableText blocks={props[0].menuText} />
+    </div>
+  );
+};
 
-// Menu.getInitialProps = async function () {
-//   const res = await client.fetch(
-//     groq`
-//     *
-//   `
-//   );
-
-//   return res;
-// };
-
-// export default Menu;
+export default Menu;

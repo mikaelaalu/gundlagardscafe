@@ -4,6 +4,11 @@ export default {
   title: "Meny",
   fields: [
     {
+      name: "titleMenu",
+      type: "string",
+      title: "Meny",
+    },
+    {
       title: "Meny text",
       name: "menuText",
       type: "array",
