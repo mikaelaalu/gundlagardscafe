@@ -8,6 +8,7 @@ import menu from "./menu";
 import openingHours from "./openingHours";
 import findUs from "./findUs";
 import event from "./event";
+import footer from "./footer";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -21,5 +22,6 @@ export default createSchema({
     openingHours,
     findUs,
     event,
+    footer,
   ]),
 });
