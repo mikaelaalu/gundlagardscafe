@@ -4,7 +4,7 @@ import Footer from "../Footer";
 const Layout = ({ children, props }) => {
   //Hamburger menu in here?
   return (
-    <div>
+    <section>
       <Link href="/">
         <a>Home</a>
       </Link>
@@ -22,7 +22,7 @@ const Layout = ({ children, props }) => {
       </Link>
       {children}
       <Footer props={props.footer[0]} />
-    </div>
+    </section>
   );
 };
 
