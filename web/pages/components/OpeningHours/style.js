@@ -6,7 +6,7 @@ const blackBorder = styled.div`
 `;
 
 const testTitle = styled.h2`
-  color: red;
+  color: var(--text-color);
 `;
 
 export default { blackBorder, testTitle };
