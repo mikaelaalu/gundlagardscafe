@@ -1,7 +1,8 @@
 :root {
-  --beige: #fdecd2;
-  --green: #63a360;
-  --black: #1a1919;
-  --blue: #4c7389;
-  --orange: #cc963e;
+  /* project colors */
+  --dipp-beige: #fdecd2;
+  --distant-green: #63a360;
+  --light-black: #1a1919;
+  --lakeside-blue: #4c7389;
+  --baked-orange: #cc963e;
 }

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const footer = styled.div`
+const footer = styled.footer`
   color: white;
-  background-color: #262727;
+  background-color: var(--light-black);
 `;
 
 export default { footer };
