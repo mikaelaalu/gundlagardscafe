@@ -1,27 +1,27 @@
 import groq from "groq";
 import client from "../client";
+import OpeningHoursComp from "./components/OpeningHours";
+import Menu from "./components/Menu";
+import FindUs from "./components/FindUs";
 import Layout from "./components/Layout";
-
-const Index = (props) => {
+const OpeningHours = (props) => {
   return (
     <Layout props={props}>
       <p>Home!</p>
+      <OpeningHoursComp props={props.openingHours[0]} />
     </Layout>
   );
 };
 
 const query = groq`{
   "openingHours": (*[_type == 'openingHours']),
-  "menu": (*[_type == 'menu']),
-  "findUs": (*[_type == 'findUs']),
-  "event": (*[_type == 'event']),
   "footer": (*[_type == 'footer'])
 }`;
 
-Index.getInitialProps = async function () {
+OpeningHours.getInitialProps = async function () {
   const res = await client.fetch(query);
 
   return res;
 };
 
-export default Index;
+export default OpeningHours;
