@@ -17,6 +17,9 @@ const Layout = ({ children, props }) => {
       <Link href="/menu">
         <a>Meny</a>
       </Link>
+      <Link href="/about">
+        <a>Om Oss</a>
+      </Link>
       {children}
       <Footer props={props.footer[0]} />
     </div>

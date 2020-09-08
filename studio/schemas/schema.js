@@ -9,6 +9,7 @@ import openingHours from "./openingHours";
 import findUs from "./findUs";
 import event from "./event";
 import footer from "./footer";
+import about from "./about";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -19,6 +20,7 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     menu,
+    about,
     openingHours,
     findUs,
     event,

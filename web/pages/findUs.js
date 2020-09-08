@@ -6,7 +6,6 @@ import Layout from "./components/Layout";
 const FindUsPage = (props) => {
   return (
     <Layout props={props}>
-      <p>Home!</p>
       <FindUs props={props.findUs[0]} />
     </Layout>
   );

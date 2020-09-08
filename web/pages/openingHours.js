@@ -1,14 +1,12 @@
 import groq from "groq";
 import client from "../client";
-import OpeningHoursComp from "./components/OpeningHours";
-import Menu from "./components/Menu";
-import FindUs from "./components/FindUs";
+import OpeningHours from "./components/OpeningHours";
 import Layout from "./components/Layout";
-const OpeningHours = (props) => {
+
+const OpeningHoursPage = (props) => {
   return (
     <Layout props={props}>
-      <p>Home!</p>
-      <OpeningHoursComp props={props.openingHours[0]} />
+      <OpeningHours props={props.openingHours[0]} />
     </Layout>
   );
 };
@@ -18,10 +16,10 @@ const query = groq`{
   "footer": (*[_type == 'footer'])
 }`;
 
-OpeningHours.getInitialProps = async function () {
+OpeningHoursPage.getInitialProps = async function () {
   const res = await client.fetch(query);
 
   return res;
 };
 
-export default OpeningHours;
+export default OpeningHoursPage;

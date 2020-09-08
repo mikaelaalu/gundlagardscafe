@@ -1,9 +1,8 @@
 import groq from "groq";
 import client from "../client";
-import OpeningHours from "./components/OpeningHours";
 import Menu from "./components/Menu";
-import FindUs from "./components/FindUs";
 import Layout from "./components/Layout";
+
 const MenuPage = (props) => {
   return (
     <Layout props={props}>
