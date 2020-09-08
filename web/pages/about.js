@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import About from "./components/About";
 
 const AboutPage = (props) => {
+  console.log("about" + props);
   return (
     <Layout props={props}>
       <About props={props.about[0]} />
@@ -23,3 +24,4 @@ AboutPage.getInitialProps = async function () {
 };
 
 export default AboutPage;
+ 

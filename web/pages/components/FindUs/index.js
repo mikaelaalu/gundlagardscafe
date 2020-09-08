@@ -12,7 +12,7 @@ const FindUs = ({ props }) => {
         frameBorder="0"
         allowFullScreen=""
         aria-hidden="false"
-        tabIndex="0"
+        tabIndex="0" 
       ></iframe>
     </div>
   );

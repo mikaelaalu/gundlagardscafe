@@ -15,7 +15,6 @@ const Navigation = ({ props }) => {
           <a>{props.findUs}</a>
         </Link>
       </Style.blackBorder>
-
       <Style.blackBorder>
         <Link href="/about">
           <a>{props.about}</a>

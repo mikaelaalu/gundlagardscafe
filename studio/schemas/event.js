@@ -4,7 +4,7 @@ export default {
   title: "Evenemang",
   fields: [
     {
-      title: "Titel",
+      title: "Titel till evenemang",
       name: "title",
       type: "string",
     },
@@ -20,6 +20,11 @@ export default {
       type: "string",
       description:
         "En kort beskrivning av bilden så att även den som inte kan se bilden får den väsentliga informationen från bilden.",
+    },
+    {
+      title: "Schedule",
+      name: "schedule",
+      type: "schedule", // defined in objects
     },
     {
       title: "Datum",

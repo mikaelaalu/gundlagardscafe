@@ -2,7 +2,7 @@ import Style from "./style";
 import PortableText from "@sanity/block-content-to-react";
 
 const About = ({ props }) => {
-  console.log(props);
+  console.log("about comp" + props);
   return (
     <div>
       <h2>{props.titleAbout}</h2>
