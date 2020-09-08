@@ -7,7 +7,7 @@ const About = ({ props }) => {
     <div>
       <h2>{props.titleAbout}</h2>
       <PortableText blocks={props.findUsText[0]} />
-      <img src={props.image.asset._ref} alt={props.imageAlt} />
+      {/* <img src={props.image.asset._ref} alt={props.imageAlt} /> */}
     </div>
   );
 };

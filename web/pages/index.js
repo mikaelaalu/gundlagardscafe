@@ -1,11 +1,13 @@
 import groq from "groq";
 import client from "../client";
 import Layout from "./components/Layout";
+import Navigation from "./components/Navigation";
 
 const Index = (props) => {
+  // console.log(props.frontPage[0]);
   return (
     <Layout props={props}>
-      <p>Home!</p>
+      <Navigation props={props.frontPage[0]} />
     </Layout>
   );
 };
@@ -15,7 +17,8 @@ const query = groq`{
   "menu": (*[_type == 'menu']),
   "findUs": (*[_type == 'findUs']),
   "event": (*[_type == 'event']),
-  "footer": (*[_type == 'footer'])
+  "footer": (*[_type == 'footer']),
+  "frontPage": (*[_type== 'frontPage'])
 }`;
 
 Index.getInitialProps = async function () {
