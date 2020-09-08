@@ -1,19 +1,14 @@
 import groq from "groq";
 import client from "../client";
-import OpeningHours from "./components/OpeningHours";
-import Menu from "./components/Menu";
-import FindUs from "./components/FindUs";
-import Footer from "./components/Footer";
+import Layout from "./components/Layout";
+import Navigation from "./components/Navigation";
+
 const Index = (props) => {
-  console.log(props);
+  // console.log(props.frontPage[0]);
   return (
-    <div>
-      <p>Home!</p>
-      <OpeningHours props={props.openingHours[0]} />
-      <Menu props={props.menu} />
-      <FindUs props={props.findUs[0]} />
-      <Footer props={props.footer[0]} />
-    </div>
+    <Layout props={props}>
+      <Navigation props={props.frontPage[0]} />
+    </Layout>
   );
 };
 
@@ -22,7 +17,8 @@ const query = groq`{
   "menu": (*[_type == 'menu']),
   "findUs": (*[_type == 'findUs']),
   "event": (*[_type == 'event']),
-  "footer": (*[_type == 'footer'])
+  "footer": (*[_type == 'footer']),
+  "frontPage": (*[_type== 'frontPage'])
 }`;
 
 Index.getInitialProps = async function () {
