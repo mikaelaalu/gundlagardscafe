@@ -8,11 +8,13 @@ const title = styled.h1`
 const box = styled.div`
   width: 157px;
   height: 171px;
-  border: 1px solid black;
   margin: 6px;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(${(p) => p.img});
+  background-size: cover;
 `;
 
 const container = styled.section`
