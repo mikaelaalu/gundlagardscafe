@@ -6,14 +6,15 @@ import Layout from "./components/Layout";
 const MenuPage = (props) => {
   return (
     <Layout props={props}>
-      <Menu props={props.menu} />
+      <Menu props={props.menu[0]} />
     </Layout>
   );
 };
 
 const query = groq`{
   "menu": (*[_type == 'menu']),
-  "footer": (*[_type == 'footer'])
+  "footer": (*[_type == 'footer']),
+  "navigation": (*[_type== 'navigation'])
 }`;
 
 MenuPage.getInitialProps = async function () {

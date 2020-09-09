@@ -3,38 +3,42 @@ import Link from "next/link";
 
 const Navigation = ({ props }) => {
   return (
-    <Style.blackBorder>
-      <Style.blackBorder>
+    <Style.container>
+      {/* <img src={props.imageAbout.asset.ref}></img> */}
+      <Style.title>{props.title}</Style.title>
+      <Style.wrapper>
         <Link href="/openingHours">
-          <a>{props.openingHours}</a>
+          <Style.box>
+            <Style.a>{props.openingHours}</Style.a>
+          </Style.box>
         </Link>
-      </Style.blackBorder>
-      <Style.blackBorder>
         <Link href="/findUs">
-          <a>{props.findUs}</a>
+          <Style.box>
+            <Style.a>{props.findUs}</Style.a>
+          </Style.box>
         </Link>
-      </Style.blackBorder>
-      <Style.blackBorder>
         <Link href="/about">
-          <a>{props.about}</a>
+          <Style.box>
+            <Style.a>{props.about}</Style.a>
+          </Style.box>
         </Link>
-      </Style.blackBorder>
-      <Style.blackBorder>
         <Link href="/event">
-          <a>{props.event}</a>
+          <Style.box>
+            <Style.a>{props.event}</Style.a>
+          </Style.box>
         </Link>
-      </Style.blackBorder>
-      <Style.blackBorder>
         <Link href="/catering">
-          <a>{props.catering}</a>
+          <Style.box>
+            <Style.a>{props.catering}</Style.a>
+          </Style.box>
         </Link>
-      </Style.blackBorder>
-      <Style.blackBorder>
         <Link href="/menu">
-          <a>{props.menu}</a>
+          <Style.box>
+            <Style.a>{props.menu}</Style.a>
+          </Style.box>
         </Link>
-      </Style.blackBorder>
-    </Style.blackBorder>
+      </Style.wrapper>
+    </Style.container>
   );
 };
 
