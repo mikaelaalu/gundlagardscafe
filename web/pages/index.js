@@ -5,11 +5,6 @@ import Navigation from "./components/Navigation";
 
 const Index = (props) => {
   // console.log(props);
-<<<<<<< HEAD
-
-=======
-  // console.log(props.frontPage[0]);
->>>>>>> e969d38c4d941632c555192d305fa5b0de67dcce
   return (
     <Layout props={props}>
       <Navigation props={props.navigation[0]} />
