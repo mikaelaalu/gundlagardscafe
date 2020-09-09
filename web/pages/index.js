@@ -4,7 +4,7 @@ import Layout from "./components/Layout";
 import Navigation from "./components/Navigation";
 
 const Index = (props) => {
-  console.log(props);
+  // console.log(props);
   // console.log(props.frontPage[0]);
   return (
     <Layout props={props}>
