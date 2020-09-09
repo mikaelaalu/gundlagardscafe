@@ -10,7 +10,7 @@ export default {
     },
     {
       title: "Info om oss",
-      name: "findUsText",
+      name: "aboutText",
       type: "array",
       of: [{ type: "block" }],
     },
@@ -24,6 +24,10 @@ export default {
       title: "Alt text till bild",
       name: "imageAlt",
       type: "string",
+      validation: (Rule) =>
+        Rule.error(
+          "Du måste fylla i en alternativ text för tillgängligheten på hemsidan."
+        ).required(),
       description:
         "En kort beskrivning av bilden så att även den som inte kan se bilden får den väsentliga informationen från bilden.",
     },
