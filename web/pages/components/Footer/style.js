@@ -1,8 +1,28 @@
 import styled from "styled-components";
 
-const footer = styled.footer`
+const a = styled.a`
   color: white;
-  background-color: var(--light-black);
+  text-decoration: none;
 `;
 
-export default { footer };
+const title = styled.h3`
+  font-weight: bold;
+  font-size: 18px;
+`;
+
+const box = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const footer = styled.footer`
+  color: white;
+  background-color: var(--secondary-mud);
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 6%;
+`;
+
+export default { footer, title, box, a };
