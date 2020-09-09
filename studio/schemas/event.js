@@ -22,23 +22,14 @@ export default {
         "En kort beskrivning av bilden så att även den som inte kan se bilden får den väsentliga informationen från bilden.",
     },
     {
-      title: "Schedule",
-      name: "schedule",
-      type: "schedule", // defined in objects
-    },
-    {
       title: "Datum",
-      name: "eventDates",
+      name: "eventDate",
       type: "array",
       of: [
         {
-          type: "datetime",
           title: "Lägg till datum",
-          options: {
-            dateFormat: "DD MMMM",
-            dateTime: "HH:mm",
-            timeStep: 5,
-          },
+          name: "timeSpan",
+          type: "duration",
         },
       ],
     },

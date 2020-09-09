@@ -17,6 +17,7 @@ import eventInformation from "./eventInformation";
 import footer from "./footer";
 import about from "./about";
 import navigation from "./navigation";
+import dayAndTime from "./objects/dayAndTime";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,6 +31,7 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     schedule,
     bio,
+    dayAndTime,
 
     /* Your types here! */
     navigation,

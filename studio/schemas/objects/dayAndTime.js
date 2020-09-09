@@ -1,27 +1,30 @@
 export default {
-  name: "schedule",
+  name: "duration",
   type: "object",
-  title: "Schedule",
+  title: "Test",
+  fieldsets: [{ name: "dayAndTime", title: "Datum och tid för evenemenag" }],
   fields: [
     {
-      name: "from",
+      title: "Börjar",
+      name: "startingTime",
       type: "datetime",
-      title: "From",
       options: {
         dateFormat: "DD MMMM",
         dateTime: "HH:mm",
         timeStep: 5,
       },
+      fieldset: "dayAndTime",
     },
     {
-      name: "to",
+      title: "Slutar",
+      name: "endingTime",
       type: "datetime",
-      title: "To",
       options: {
         dateFormat: "DD MMMM",
         dateTime: "HH:mm",
         timeStep: 5,
       },
+      fieldset: "dayAndTime",
     },
   ],
 };

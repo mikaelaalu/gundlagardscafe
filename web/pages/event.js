@@ -7,6 +7,8 @@ import Event from "./components/Event";
 const EventPage = (props) => {
   const events = props.event;
 
+  console.log(events);
+
   return (
     <Layout props={props}>
       <EventIntro props={props.eventInformation[0]} />
@@ -17,7 +19,8 @@ const EventPage = (props) => {
         <Event
           key={key}
           title={event.title}
-          /* src={item.image.asset._ref} */ alt={event.imageAlt}
+        //   date={event.eventDates}
+          /* src={item.image.asset._ref}  alt={event.imageAlt}*/
         />
       ))}
     </Layout>
