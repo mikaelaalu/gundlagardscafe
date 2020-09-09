@@ -4,11 +4,11 @@ import Layout from "./components/Layout";
 import Navigation from "./components/Navigation";
 
 const Index = (props) => {
-  console.log(props);
-  // console.log(props.frontPage[0]);
+  // console.log(props);
+
   return (
     <Layout props={props}>
-      <Navigation props={props.frontPage[0]} />
+      <Navigation props={props.navigation[0]} />
     </Layout>
   );
 };
@@ -19,7 +19,7 @@ const query = groq`{
   "findUs": (*[_type == 'findUs']),
   "event": (*[_type == 'event']),
   "footer": (*[_type == 'footer']),
-  "frontPage": (*[_type== 'frontPage'])
+  "navigation": (*[_type== 'navigation'])
 }`;
 
 Index.getInitialProps = async function () {

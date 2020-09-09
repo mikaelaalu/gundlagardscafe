@@ -1,5 +1,5 @@
 export default {
-  name: "frontPage",
+  name: "navigation",
   type: "document",
   title: "Startsida",
   fields: [

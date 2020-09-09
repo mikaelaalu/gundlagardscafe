@@ -16,7 +16,7 @@ import event from "./event";
 import eventInformation from "./eventInformation";
 import footer from "./footer";
 import about from "./about";
-import frontPage from "./frontPage";
+import navigation from "./navigation";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -32,7 +32,7 @@ export default createSchema({
     bio,
 
     /* Your types here! */
-    frontPage,
+    navigation,
     menu,
     about,
     openingHours,

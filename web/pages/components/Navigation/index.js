@@ -2,7 +2,7 @@ import Style from "./style";
 import Link from "next/link";
 
 const Navigation = ({ props }) => {
-  console.log(props);
+  // console.log(props);
   return (
     <Style.blackBorder>
       <Style.blackBorder>
