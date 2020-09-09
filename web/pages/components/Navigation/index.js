@@ -4,8 +4,8 @@ import Link from "next/link";
 const Navigation = ({ props }) => {
   return (
     <Style.container>
-      <h1>{props.title}</h1>
       {/* <img src={props.imageAbout.asset.ref}></img> */}
+      <Style.title>{props.title}</Style.title>
       <Style.wrapper>
         <Style.box>
           <Link href="/openingHours">

@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+const title = styled.h1`
+  font-size: 40px;
+  text-align: center;
+`;
+
 const box = styled.div`
   width: 157px;
   height: 171px;
@@ -15,6 +20,7 @@ const container = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
 `;
 
 const wrapper = styled.div`
@@ -22,6 +28,7 @@ const wrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 `;
 
-export default { box, wrapper, container };
+export default { box, wrapper, container, title };
