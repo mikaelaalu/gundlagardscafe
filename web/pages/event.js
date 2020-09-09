@@ -5,18 +5,11 @@ import EventIntro from "./components/EventIntro";
 import Event from "./components/Event";
 
 const EventPage = (props) => {
-  console.log(props);
-
-  // EventIntro
-  const heading = props.eventInformation[0].heading;
-  const description = props.eventInformation[0].description;
-
   const events = props.event;
-  console.log(events);
 
   return (
     <Layout props={props}>
-      <EventIntro heading={heading} intro={description} />
+      <EventIntro props={props.eventInformation[0]} />
 
       {/* <Event title="Title" date="date" time="time" /> */}
 
@@ -44,6 +37,3 @@ EventPage.getInitialProps = async function () {
 };
 
 export default EventPage;
-
-// Next.js comes with a special function called getInitialProps that is called and returns props to the react component before rendering the templates in /pages.
-// This is a perfect place for fetching the data you want for a page.
