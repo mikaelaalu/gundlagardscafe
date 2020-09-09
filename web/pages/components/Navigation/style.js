@@ -9,7 +9,7 @@ const box = styled.div`
   width: 157px;
   height: 171px;
   margin: 6px;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
