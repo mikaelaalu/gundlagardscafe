@@ -21,6 +21,7 @@ const container = styled.section`
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  margin-top: 5%;
 `;
 
 const wrapper = styled.div`
@@ -28,7 +29,12 @@ const wrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 10%;
 `;
 
-export default { box, wrapper, container, title };
+const a = styled.a`
+  font-weight: bold;
+  font-size: 24px;
+`;
+
+export default { box, wrapper, container, title, a };

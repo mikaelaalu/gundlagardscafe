@@ -7,36 +7,36 @@ const Navigation = ({ props }) => {
       {/* <img src={props.imageAbout.asset.ref}></img> */}
       <Style.title>{props.title}</Style.title>
       <Style.wrapper>
-        <Style.box>
-          <Link href="/openingHours">
-            <a>{props.openingHours}</a>
-          </Link>
-        </Style.box>
-        <Style.box>
-          <Link href="/findUs">
-            <a>{props.findUs}</a>
-          </Link>
-        </Style.box>
-        <Style.box>
-          <Link href="/about">
-            <a>{props.about}</a>
-          </Link>
-        </Style.box>
-        <Style.box>
-          <Link href="/event">
-            <a>{props.event}</a>
-          </Link>
-        </Style.box>
-        <Style.box>
-          <Link href="/catering">
-            <a>{props.catering}</a>
-          </Link>
-        </Style.box>
-        <Style.box>
-          <Link href="/menu">
-            <a>{props.menu}</a>
-          </Link>
-        </Style.box>
+        <Link href="/openingHours">
+          <Style.box>
+            <Style.a>{props.openingHours}</Style.a>
+          </Style.box>
+        </Link>
+        <Link href="/findUs">
+          <Style.box>
+            <Style.a>{props.findUs}</Style.a>
+          </Style.box>
+        </Link>
+        <Link href="/about">
+          <Style.box>
+            <Style.a>{props.about}</Style.a>
+          </Style.box>
+        </Link>
+        <Link href="/event">
+          <Style.box>
+            <Style.a>{props.event}</Style.a>
+          </Style.box>
+        </Link>
+        <Link href="/catering">
+          <Style.box>
+            <Style.a>{props.catering}</Style.a>
+          </Style.box>
+        </Link>
+        <Link href="/menu">
+          <Style.box>
+            <Style.a>{props.menu}</Style.a>
+          </Style.box>
+        </Link>
       </Style.wrapper>
     </Style.container>
   );
