@@ -4,7 +4,6 @@ import Layout from "./components/Layout";
 import About from "./components/About";
 
 const AboutPage = (props) => {
-  console.log("about" + props);
   return (
     <Layout props={props}>
       <About props={props.about[0]} />
@@ -14,7 +13,8 @@ const AboutPage = (props) => {
 
 const query = groq`{
   "footer": (*[_type == 'footer']),
-  "about": (*[_type == 'about'])
+  "about": (*[_type == 'about']),
+  "navigation": (*[_type== 'navigation'])
 }`;
 
 AboutPage.getInitialProps = async function () {
@@ -24,4 +24,3 @@ AboutPage.getInitialProps = async function () {
 };
 
 export default AboutPage;
- 

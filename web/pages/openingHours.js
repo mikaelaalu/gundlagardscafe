@@ -13,7 +13,8 @@ const OpeningHoursPage = (props) => {
 
 const query = groq`{
   "openingHours": (*[_type == 'openingHours']),
-  "footer": (*[_type == 'footer'])
+  "footer": (*[_type == 'footer']),
+  "navigation": (*[_type== 'navigation'])
 }`;
 
 OpeningHoursPage.getInitialProps = async function () {

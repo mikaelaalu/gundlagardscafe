@@ -28,6 +28,7 @@ const query = groq`{
     "eventInformation": (*[_type == 'eventInformation']),
     "event": (*[_type == 'event']),
     "footer": (*[_type == 'footer']),
+    "navigation": (*[_type== 'navigation'])
   }`;
 
 EventPage.getInitialProps = async function () {

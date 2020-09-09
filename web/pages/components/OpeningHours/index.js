@@ -1,7 +1,7 @@
 import Style from "./style";
 const OpeningHours = ({ props }) => {
   return (
-    <Style.blackBorder>
+    <Style.box>
       <Style.testTitle>{props.titleOpening}</Style.testTitle>
       <div>
         <p>{props.monday}</p>
@@ -31,7 +31,7 @@ const OpeningHours = ({ props }) => {
         <p>{props.sunday}</p>
         <p>{props.openSunday}</p>
       </div>
-    </Style.blackBorder>
+    </Style.box>
   );
 };
 

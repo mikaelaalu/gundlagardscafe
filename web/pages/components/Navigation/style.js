@@ -1,8 +1,27 @@
 import styled from "styled-components";
 
-const blackBorder = styled.div`
-  width: 100%;
+const box = styled.div`
+  width: 157px;
+  height: 171px;
   border: 1px solid black;
+  margin: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
-export default { blackBorder };
+const container = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+const wrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+`;
+
+export default { box, wrapper, container };
