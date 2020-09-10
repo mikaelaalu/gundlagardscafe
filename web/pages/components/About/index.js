@@ -8,12 +8,14 @@ const About = ({ props }) => {
 
   return (
     <Style.about>
-      <Style.textWrapper>
-        <h2>{props.titleAbout}</h2>
-      </Style.textWrapper>
-      <Style.textWrapper>
-        <PortableText blocks={props.aboutText} />
-      </Style.textWrapper>
+      <Style.textContent>
+        <Style.textWrapper>
+          <h2 className="pageTitle">{props.titleAbout}</h2>
+        </Style.textWrapper>
+        <Style.textWrapper>
+          <PortableText blocks={props.aboutText} />
+        </Style.textWrapper>
+      </Style.textContent>
       <Style.imageWrapper>
         <img
           src={imageUrlBuilder(props.image.asset._ref)}
