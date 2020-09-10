@@ -7,6 +7,7 @@ export default {
       name: "titleOpening",
       type: "string",
       title: "Öppettider",
+      description: "Titel på sidan",
     },
     {
       name: "monday",

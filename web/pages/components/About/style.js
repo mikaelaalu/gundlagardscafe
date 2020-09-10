@@ -5,7 +5,13 @@ const about = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: var(--light-black); */
+`;
+
+const textContent = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const textWrapper = styled.div`
@@ -20,7 +26,9 @@ const imageWrapper = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+    margin: 0;
   }
 `;
 
-export default { about, textWrapper, imageWrapper };
+export default { about, textContent, textWrapper, imageWrapper };

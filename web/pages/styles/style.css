@@ -2,10 +2,35 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: PT Sans Narrow;
+  font-family: "PT Sans Narrow", sans-serif;
   font-weight: normal;
 }
 
-/* h1, h2, h3, h4, p {
+body {
+  background-color: var(--light-black);
+  width: 100vw;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
   color: var(--white);
-} */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a,
+a:visited {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.pageTitle {
+  font-size: 24px;
+}
