@@ -5,7 +5,6 @@ import imageUrlBuilder from "../../../imageUrlBuilder";
 const Navigation = ({ props }) => {
   return (
     <Style.container>
-      {/* <img src={}></img> */}
       <Style.title>{props.title}</Style.title>
       <Style.wrapper>
         <Link href="/openingHours">
