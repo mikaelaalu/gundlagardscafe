@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Style from "./style";
+import Burger from "../Burger";
 
 const NavBar = ({ props }) => {
   return (
@@ -9,6 +10,8 @@ const NavBar = ({ props }) => {
           <a>LOGGAN</a>
         </Link>
       </Style.logo>
+
+      <Burger />
       <Style.ul>
         <Link href="/openingHours">
           <a>{props.openingHours}</a>

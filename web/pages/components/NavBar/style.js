@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const nav = styled.nav`
   width: 100%;
-  height: 55px;
+  height: 102px;
   border-bottom: 1px solid black;
   padding: 0 20px;
   display: flex;
@@ -20,6 +20,7 @@ const ul = styled.ul`
   }
 
   @media (max-width: 768px) {
+    display: none;
     flex-flow: column nowrap;
     background-color: hotpink;
     position: fixed;
