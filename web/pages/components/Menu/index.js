@@ -1,5 +1,4 @@
 import PortableText from "@sanity/block-content-to-react";
-
 const Menu = ({ props }) => {
   return (
     <div>
