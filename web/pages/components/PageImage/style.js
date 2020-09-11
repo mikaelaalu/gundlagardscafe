@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const iconWrapper = styled.div`
+const imageWrapper = styled.div`
   width: 100vw;
   height: 100vw;
 
@@ -11,4 +11,4 @@ const iconWrapper = styled.div`
   }
 `;
 
-export default { iconWrapper };
+export default { imageWrapper };

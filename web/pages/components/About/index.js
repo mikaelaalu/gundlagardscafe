@@ -8,13 +8,13 @@ import PageIcon from "../PageIcon";
 const About = ({ props }) => {
   return (
     <Style.about>
-      <Style.textContent>
+      <div className="textContent">
         <PageTitle title={props.titleAbout} />
 
         <PageIntro>
           <PortableText blocks={props.aboutText} />
         </PageIntro>
-      </Style.textContent>
+      </div>
 
       <PageIcon
         src={imageUrlBuilder(props.image.asset._ref)}
