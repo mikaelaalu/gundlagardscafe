@@ -12,6 +12,8 @@ const nav = styled.nav`
   width: 100%;
   height: 102px;
   background-color: var(--dipp-beige);
+  position: fixed;
+  top: 0;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
