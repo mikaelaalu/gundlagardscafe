@@ -2,9 +2,9 @@ import Style from "./style";
 
 const PageIcon = (props) => {
   return (
-    <Style.imageWrapper>
+    <Style.iconWrapper>
       <img src={props.src} alt={props.alt} />
-    </Style.imageWrapper>
+    </Style.iconWrapper>
   );
 };
 

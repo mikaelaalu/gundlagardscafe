@@ -1,5 +1,5 @@
 export default {
-  name: "icons",
+  name: "icon",
   type: "document",
   title: "Ikoner",
   fields: [

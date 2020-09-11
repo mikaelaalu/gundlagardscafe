@@ -16,7 +16,8 @@ const AboutPage = (props) => {
 const query = groq`{
   "footer": (*[_type == 'footer']),
   "about": (*[_type == 'about']),
-  "navigation": (*[_type== 'navigation'])
+  "navigation": (*[_type== 'navigation']),
+  "icon": (*[_type == 'icon']),
 }`;
 
 AboutPage.getInitialProps = async function () {
