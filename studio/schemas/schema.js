@@ -6,7 +6,8 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // Object types
 import schedule from "./objects/schedule";
-import bio from "./objects/bioPortableText";
+import dayAndTime from "./objects/dayAndTime";
+import hours from "./objects/hours";
 
 // Document types
 import menu from "./menu";
@@ -17,7 +18,6 @@ import eventInformation from "./eventInformation";
 import footer from "./footer";
 import about from "./about";
 import navigation from "./navigation";
-import dayAndTime from "./objects/dayAndTime";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,8 +30,8 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     schedule,
-    bio,
     dayAndTime,
+    hours,
 
     /* Your types here! */
     navigation,

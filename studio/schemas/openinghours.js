@@ -15,9 +15,9 @@ export default {
       title: "Måndag",
     },
     {
-      name: "openMonday",
-      type: "string",
-      title: "Öppet",
+      name: "mondayOpeningHours",
+      type: "hours",
+      title: "Måndag öppettider",
     },
     {
       name: "tuesday",

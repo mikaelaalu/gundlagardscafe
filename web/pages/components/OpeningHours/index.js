@@ -1,5 +1,6 @@
 import Style from "./style";
 const OpeningHours = ({ props }) => {
+  console.log(props);
   return (
     <Style.box>
       <Style.testTitle>{props.titleOpening}</Style.testTitle>

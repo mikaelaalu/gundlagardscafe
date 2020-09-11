@@ -11,14 +11,10 @@ export default {
     },
     {
       name: "description",
-      type: "text",
+      type: "array",
+      of: [{ type: "block" }],
       title: "Beskrivning",
       description: "En inledande text till sidan och dess innehåll.",
-    },
-    {
-      name: "from",
-      type: "bioPortableText",
-      title: "From",
     },
   ],
 };
