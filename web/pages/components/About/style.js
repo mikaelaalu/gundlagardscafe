@@ -14,10 +14,6 @@ const textContent = styled.div`
   align-items: center;
 `;
 
-const textWrapper = styled.div`
-  width: 90%;
-`;
-
 const imageWrapper = styled.div`
   width: 100vw;
   height: 100vw;
@@ -31,4 +27,4 @@ const imageWrapper = styled.div`
   }
 `;
 
-export default { about, textContent, textWrapper, imageWrapper };
+export default { about, textContent, imageWrapper };

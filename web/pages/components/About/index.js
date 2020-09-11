@@ -1,27 +1,32 @@
 import Style from "./style";
 import PortableText from "@sanity/block-content-to-react";
 import imageUrlBuilder from "../../../imageUrlBuilder";
+import PageIntro from "../PageIntro";
+import PageTitle from "../PageTitle";
+import PageIcon from "../PageIcon";
 
 const About = ({ props }) => {
-  console.log("about component:");
-  console.log(props);
-
   return (
     <Style.about>
       <Style.textContent>
-        <Style.textWrapper>
-          <h2 className="pageTitle">{props.titleAbout}</h2>
-        </Style.textWrapper>
-        <Style.textWrapper>
+        <PageTitle title={props.titleAbout} />
+
+        <PageIntro>
           <PortableText blocks={props.aboutText} />
-        </Style.textWrapper>
+        </PageIntro>
       </Style.textContent>
-      <Style.imageWrapper>
+
+      <PageIcon
+        src={imageUrlBuilder(props.image.asset._ref)}
+        alt={props.imageAlt}
+      />
+
+      {/* <Style.imageWrapper>
         <img
           src={imageUrlBuilder(props.image.asset._ref)}
           alt={props.imageAlt}
         />
-      </Style.imageWrapper>
+      </Style.imageWrapper> */}
     </Style.about>
   );
 };
