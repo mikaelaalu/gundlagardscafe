@@ -1,13 +1,15 @@
 import Link from "next/link";
 import Footer from "../Footer";
 import Style from "./style";
+import NavBar from "../NavBar";
 
 const Layout = ({ children, props }) => {
   //Hamburger menu in here?
 
   return (
     <section>
-      <Style.wrapper>
+      <NavBar props={props.navigation[0]} />
+      {/* <Style.wrapper>
         <Link href="/">
           <a>LOGGAN</a>
         </Link>
@@ -30,7 +32,7 @@ const Layout = ({ children, props }) => {
         <Link href="/menu">
           <a>{props.navigation[0].menu}</a>
         </Link>
-      </Style.wrapper>
+      </Style.wrapper> */}
 
       {children}
       <Footer props={props.footer[0]} />
