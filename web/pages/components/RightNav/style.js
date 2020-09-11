@@ -1,8 +1,20 @@
 import styled from "styled-components";
 
+const logoDesktop = styled.a`
+  display: flex;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
 const ul = styled.ul`
   display: flex;
+  align-items: center;
+
   flex-flow: row nowrap;
+  height: 102px;
+  width: 100vw;
 
   a {
     padding: 18px 10px;
@@ -36,9 +48,13 @@ const exit = styled.div`
   position: fixed;
   top: 40px;
   right: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-flow: column nowrap;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
 `;
 
 //Update styling for cross in here
@@ -56,4 +72,4 @@ const crossTwo = styled.div`
   transform: rotate(-45deg);
 `;
 
-export default { ul, exit, crossOne, crossTwo };
+export default { ul, exit, crossOne, crossTwo, logoDesktop };

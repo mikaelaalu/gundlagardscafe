@@ -2,7 +2,6 @@ import Link from "next/link";
 import Style from "./style";
 
 const RightNav = ({ props, open, setOpen }) => {
-  console.log(open);
   return (
     <Style.ul open={open}>
       <Style.exit onClick={() => setOpen(!open)}>
@@ -19,6 +18,11 @@ const RightNav = ({ props, open, setOpen }) => {
       <Link href="/about">
         <a>{props.about}</a>
       </Link>
+
+      <Link href="/">
+        <Style.logoDesktop>LOGGA</Style.logoDesktop>
+      </Link>
+
       <Link href="/event">
         <a>{props.event}</a>
       </Link>
