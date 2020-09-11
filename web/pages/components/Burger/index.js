@@ -12,7 +12,7 @@ const Burger = ({ props }) => {
         <div></div>
         <div></div>
       </Style.burger>
-      <RightNav props={props} open={open} />
+      <RightNav props={props} open={open} setOpen={setOpen} />
     </div>
   );
 };

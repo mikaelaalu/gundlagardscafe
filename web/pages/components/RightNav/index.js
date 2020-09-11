@@ -1,9 +1,14 @@
 import Link from "next/link";
 import Style from "./style";
 
-const RightNav = ({ props, open }) => {
+const RightNav = ({ props, open, setOpen }) => {
+  console.log(open);
   return (
     <Style.ul open={open}>
+      <Style.exit onClick={() => setOpen(!open)}>
+        <Style.crossOne></Style.crossOne>
+        <Style.crossTwo></Style.crossTwo>
+      </Style.exit>
       <Link href="/openingHours">
         <a>{props.openingHours}</a>
       </Link>

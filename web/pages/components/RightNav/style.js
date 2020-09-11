@@ -29,4 +29,29 @@ const ul = styled.ul`
   }
 `;
 
-export default { ul };
+const exit = styled.div`
+  width: 25px;
+  height: 20px;
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+`;
+
+const crossOne = styled.div`
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(45deg);
+`;
+
+const crossTwo = styled.div`
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(-45deg);
+`;
+
+export default { ul, exit, crossOne, crossTwo };
