@@ -18,6 +18,7 @@ import eventInformation from "./eventInformation";
 import footer from "./footer";
 import about from "./about";
 import navigation from "./navigation";
+import icon from "./icon";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -42,5 +43,6 @@ export default createSchema({
     event,
     eventInformation,
     footer,
+    icon,
   ]),
 });

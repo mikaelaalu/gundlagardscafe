@@ -4,6 +4,8 @@ import Layout from "./components/Layout";
 import About from "./components/About";
 
 const AboutPage = (props) => {
+  console.log("about oage:");
+  console.log(props);
   return (
     <Layout props={props}>
       <About props={props.about[0]} />
