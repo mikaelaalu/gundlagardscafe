@@ -6,7 +6,6 @@ const burger = styled.div`
   position: fixed;
   top: 40px;
   right: 20px;
-
   display: none;
 
   @media (max-width: 768px) {

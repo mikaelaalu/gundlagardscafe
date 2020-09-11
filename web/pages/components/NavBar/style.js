@@ -7,6 +7,9 @@ const logoMobile = styled.a`
     display: flex;
   }
 `;
+const margin = styled.div`
+  margin-bottom: 102px;
+`;
 
 const nav = styled.nav`
   width: 100%;
@@ -33,4 +36,4 @@ const logo = styled.div`
   }
 `;
 
-export default { nav, logo, logoMobile };
+export default { nav, logo, logoMobile, margin };
