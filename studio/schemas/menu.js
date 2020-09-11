@@ -13,7 +13,11 @@ export default {
       title: "Beskrivande text om menyn",
       name: "menuText",
       type: "array",
-      of: [{ type: "block" }],
+      of: [
+        {
+          type: "block",
+        },
+      ],
     },
     {
       title: "Bild",
