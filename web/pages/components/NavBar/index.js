@@ -7,7 +7,7 @@ const NavBar = ({ props }) => {
     <Style.nav>
       <Style.logo>
         <Link href="/">
-          <Style.logoMobile>LOGGAN</Style.logoMobile>
+          <Style.logoMobile>logga mobile</Style.logoMobile>
         </Link>
       </Style.logo>
       <Burger props={props} />

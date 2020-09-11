@@ -20,7 +20,7 @@ const RightNav = ({ props, open, setOpen }) => {
       </Link>
 
       <Link href="/">
-        <Style.logoDesktop>LOGGA</Style.logoDesktop>
+        <Style.logoDesktop>LOGGA desktop</Style.logoDesktop>
       </Link>
 
       <Link href="/event">

@@ -8,18 +8,22 @@ const logoDesktop = styled.a`
   }
 `;
 
+//Fix hamburger menu styling in here, in @media
 const ul = styled.ul`
   display: flex;
   align-items: center;
-
+  justify-content: space-around;
   flex-flow: row nowrap;
   height: 102px;
   width: 100vw;
+  padding: 60px 10% 32px 10%;
 
   a {
     padding: 18px 10px;
     text-decoration: none;
     color: black;
+    font-weight: bold;
+    font-size: 16px;
   }
 
   @media (max-width: 768px) {
@@ -31,13 +35,16 @@ const ul = styled.ul`
     right: 0;
     height: 100vh;
     width: 50%;
-    padding-top: 80px;
+    padding: 0 0 0 0;
     transition: transform 0.3s ease-in-out;
+    align-items: flex-start;
+    justify-content: center;
 
     a {
       padding: 17px 24px;
       font-size: 24px;
       color: white;
+      font-weight: normal;
     }
   }
 `;
