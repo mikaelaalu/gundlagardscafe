@@ -1,15 +1,19 @@
 import { useState } from "react";
 import Style from "./style";
+import RightNav from "../RightNav";
 
-const Burger = () => {
+const Burger = ({ props }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Style.burger open={open} onClick={() => setOpen(!open)}>
-      <div></div>
-      <div></div>
-      <div></div>
-    </Style.burger>
+    <div>
+      <Style.burger open={open} onClick={() => setOpen(!open)}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Style.burger>
+      <RightNav props={props} open={open} />
+    </div>
   );
 };
 
