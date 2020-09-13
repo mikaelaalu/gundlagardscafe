@@ -1,37 +1,40 @@
 import Style from "./style";
+import PageTitle from "./../PageTitle";
+
 const OpeningHours = ({ props }) => {
-  console.log(props);
   return (
     <Style.box>
-      <Style.testTitle>{props.titleOpening}</Style.testTitle>
-      <div>
+      <h2>{props.titleOpening}</h2>
+      <Style.timeBox>
         <p>{props.monday}</p>
         <p>{props.openMonday}</p>
-      </div>
-      <div>
+      </Style.timeBox>
+      <Style.timeBox>
         <p>{props.tuesday}</p>
-        <p>{props.openTuesady}</p>
-      </div>
-      <div>
+        <p>{props.openTuesday}</p>
+      </Style.timeBox>
+      <Style.timeBox>
         <p>{props.wednesday}</p>
         <p>{props.openWednesday}</p>
-      </div>
-      <div>
+      </Style.timeBox>
+      <Style.timeBox>
         <p>{props.thursday}</p>
         <p>{props.openThursday}</p>
-      </div>
-      <div>
+      </Style.timeBox>
+      <Style.timeBox>
         <p>{props.friday}</p>
         <p>{props.openFriday}</p>
-      </div>
-      <div>
+      </Style.timeBox>
+      <Style.timeBox>
         <p>{props.saturday}</p>
         <p>{props.openSaturday}</p>
-      </div>
-      <div>
+      </Style.timeBox>
+      <Style.timeBox>
         <p>{props.sunday}</p>
         <p>{props.openSunday}</p>
-      </div>
+      </Style.timeBox>
+
+      <p>{props.infoOpening}</p>
     </Style.box>
   );
 };

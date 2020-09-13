@@ -4,7 +4,7 @@ import Layout from "./components/Layout";
 import Navigation from "./components/Navigation";
 import InstagramFeed from "./components/InstagramFeed";
 const Index = (props) => {
-  // console.log(props);
+  console.log(props);
   return (
     <Layout props={props[0]}>
       <Navigation props={props[0].navigation[0]} />

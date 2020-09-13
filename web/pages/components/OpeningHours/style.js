@@ -2,11 +2,16 @@ import styled from "styled-components";
 
 const box = styled.div`
   width: 100%;
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 `;
 
-const testTitle = styled.h2`
-  color: var(--text-color);
+const timeBox = styled.div`
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
 `;
 
-export default { box, testTitle };
+export default { box, timeBox };
