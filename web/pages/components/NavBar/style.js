@@ -36,4 +36,9 @@ const logo = styled.div`
   }
 `;
 
-export default { nav, logo, logoMobile, margin };
+const icon = styled.img`
+  width: 60px;
+  height: 60px;
+`;
+
+export default { nav, logo, logoMobile, margin, icon };
