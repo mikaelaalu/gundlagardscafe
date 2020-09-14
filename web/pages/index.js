@@ -4,9 +4,13 @@ import Layout from "./components/Layout";
 import Navigation from "./components/Navigation";
 import InstagramFeed from "./components/InstagramFeed";
 const Index = (props) => {
+  console.log(props[0].icon[0].iconArray[0]);
   return (
     <Layout props={props[0]}>
-      <Navigation props={props[0].navigation[0]} />
+      <Navigation
+        props={props[0].navigation[0]}
+        icon={props[0].icon[0].iconArray[0]}
+      />
       <InstagramFeed props={props[1]} />
     </Layout>
   );

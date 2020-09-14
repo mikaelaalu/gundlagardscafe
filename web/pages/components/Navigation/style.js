@@ -3,6 +3,7 @@ import styled from "styled-components";
 const title = styled.h1`
   font-size: 40px;
   text-align: center;
+  width: 90%;
 `;
 
 const box = styled.div`
@@ -39,4 +40,9 @@ const a = styled.a`
   font-size: 24px;
 `;
 
-export default { box, wrapper, container, title, a };
+const icon = styled.img`
+  width: 60px;
+  height: 50px;
+`;
+
+export default { box, wrapper, container, title, a, icon };

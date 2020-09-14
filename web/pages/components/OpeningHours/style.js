@@ -14,4 +14,9 @@ const timeBox = styled.div`
   justify-content: space-between;
 `;
 
-export default { box, timeBox };
+const icon = styled.img`
+  width: 60px;
+  height: 50px;
+`;
+
+export default { box, timeBox, icon };

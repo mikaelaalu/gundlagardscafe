@@ -2,9 +2,13 @@ import Style from "./style";
 import Link from "next/link";
 import imageUrlBuilder from "../../../imageUrlBuilder";
 
-const Navigation = ({ props }) => {
+const Navigation = ({ props, icon }) => {
+  const iconSrc = icon.iconImage.asset._ref;
+  const iconAlt = icon.iconAlt;
+
   return (
     <Style.container>
+      <Style.icon src={imageUrlBuilder(iconSrc)} alt={iconAlt} />
       <Style.title>{props.title}</Style.title>
       <Style.wrapper>
         <Link href="/openingHours">

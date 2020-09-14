@@ -4,9 +4,13 @@ import OpeningHours from "./components/OpeningHours";
 import Layout from "./components/Layout";
 
 const OpeningHoursPage = (props) => {
+  console.log(props);
   return (
     <Layout props={props}>
-      <OpeningHours props={props.openingHours[0]} />
+      <OpeningHours
+        props={props.openingHours[0]}
+        icon={props.icon[0].iconArray[0]}
+      />
     </Layout>
   );
 };
