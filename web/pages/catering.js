@@ -8,7 +8,6 @@ import PortableText from "@sanity/block-content-to-react";
 import PageIntro from "./components/PageIntro";
 
 const CateringPage = (props) => {
-  console.log(props);
   return (
     <Layout props={props}>
       <PageTitle title={props.catering[0].titleCatering} />
