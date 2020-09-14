@@ -3,6 +3,7 @@ import client from "../client";
 import Layout from "./components/Layout";
 import EventIntro from "./components/EventIntro";
 import Event from "./components/Event";
+import EventForm from "./components/Forms/eventForm";
 
 const EventPage = (props) => {
   const events = props.event;
@@ -19,10 +20,12 @@ const EventPage = (props) => {
         <Event
           key={key}
           title={event.title}
-        //   date={event.eventDates}
+          //   date={event.eventDates}
           /* src={item.image.asset._ref}  alt={event.imageAlt}*/
         />
       ))}
+
+      <EventForm />
     </Layout>
   );
 };
