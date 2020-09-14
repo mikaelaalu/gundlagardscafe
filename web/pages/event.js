@@ -34,7 +34,8 @@ const query = groq`{
     "eventInformation": (*[_type == 'eventInformation']),
     "event": (*[_type == 'event']),
     "footer": (*[_type == 'footer']),
-    "navigation": (*[_type== 'navigation'])
+    "navigation": (*[_type== 'navigation']),
+    "icon": (*[_type == 'icon']),
   }`;
 
 EventPage.getInitialProps = async function () {

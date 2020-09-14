@@ -10,7 +10,7 @@ const Layout = ({ children, props }) => {
     <section>
       <NavBar props={props.navigation[0]} />
       {children}
-      <Footer props={props.footer[0]} />
+      <Footer props={props.footer[0]} logo={props.icon[0].iconArray[6]} />
     </section>
   );
 };

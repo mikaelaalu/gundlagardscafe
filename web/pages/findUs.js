@@ -14,7 +14,8 @@ const FindUsPage = (props) => {
 const query = groq`{
     "findUs": (*[_type == 'findUs']),
     "footer": (*[_type == 'footer']),
-    "navigation": (*[_type== 'navigation'])
+    "navigation": (*[_type== 'navigation']),
+    "icon": (*[_type == 'icon']),
   }`;
 
 FindUsPage.getInitialProps = async function () {

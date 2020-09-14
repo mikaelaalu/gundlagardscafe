@@ -14,7 +14,8 @@ const MenuPage = (props) => {
 const query = groq`{
   "menu": (*[_type == 'menu']),
   "footer": (*[_type == 'footer']),
-  "navigation": (*[_type== 'navigation'])
+  "navigation": (*[_type== 'navigation']),
+  "icon": (*[_type == 'icon']),
 }`;
 
 MenuPage.getInitialProps = async function () {

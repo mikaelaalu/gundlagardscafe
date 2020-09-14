@@ -4,7 +4,6 @@ import Layout from "./components/Layout";
 import Navigation from "./components/Navigation";
 import InstagramFeed from "./components/InstagramFeed";
 const Index = (props) => {
-  console.log(props);
   return (
     <Layout props={props[0]}>
       <Navigation props={props[0].navigation[0]} />
@@ -19,7 +18,8 @@ const query = groq`{
   "findUs": (*[_type == 'findUs']),
   "event": (*[_type == 'event']),
   "footer": (*[_type == 'footer']),
-  "navigation": (*[_type== 'navigation'])
+  "navigation": (*[_type== 'navigation']),
+  "icon": (*[_type == 'icon']),
 }`;
 
 Index.getInitialProps = async function () {

@@ -25,4 +25,9 @@ const footer = styled.footer`
   padding: 6%;
 `;
 
-export default { footer, title, box, a };
+const logo = styled.img`
+  width: 54px;
+  height: 88px;
+`;
+
+export default { footer, title, box, a, logo };

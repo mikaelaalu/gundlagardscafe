@@ -24,7 +24,8 @@ const CateringPage = (props) => {
 const query = groq`{
     "footer": (*[_type == 'footer']),
     "navigation": (*[_type == 'navigation']),
-    'catering': (*[_type == 'catering'])
+    'catering': (*[_type == 'catering']),
+    "icon": (*[_type == 'icon']),
   }`;
 
 CateringPage.getInitialProps = async function () {

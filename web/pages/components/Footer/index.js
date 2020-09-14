@@ -1,8 +1,13 @@
 import Style from "./style";
+import imageUrlBuilder from "./../../../imageUrlBuilder";
 
-const Footer = ({ props }) => {
+const Footer = ({ props, logo }) => {
+  const iconSrc = logo.iconImage.asset._ref;
+  const iconAlt = logo.iconAlt;
+
   return (
     <Style.footer>
+      <Style.logo src={imageUrlBuilder(iconSrc)} alt={iconAlt} />
       <Style.box>
         <Style.title>{props.follow}</Style.title>
         <Style.a href={props.facebookLink}>{props.facebook}</Style.a>
