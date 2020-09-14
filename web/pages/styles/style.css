@@ -41,3 +41,36 @@ a:visited {
   flex-direction: column;
   align-items: center;
 }
+
+/* Styling of attach-file button */
+
+/* 
+* Hiding the native button
+* Why 1x1px? Setting property values to zero ends up throwing the element out of tab order in some browsers.
+* display: none/visibility: hidden will not work because the input value won’t be sent to the server when submitted. 
+*/
+
+[type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Styling the label */
+[type="file"] + label {
+  width: 118px;
+  height: 33px;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 16px;
+  padding: 8px 14px;
+}
+
+.attachButtonMargins {
+  margin: 16px 0px;
+}
