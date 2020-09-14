@@ -89,7 +89,7 @@ const CateringEventForm = () => {
           required
         />
 
-        <input type="file" placeholder="Välj fil" name="upload" />
+        <input type="file" name="upload" />
 
         {status === "SUCCESS" ? (
           <p>Skickat!</p>

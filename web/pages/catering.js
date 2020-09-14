@@ -3,19 +3,18 @@ import client from "../client";
 import FindUs from "./components/FindUs";
 import Layout from "./components/Layout";
 import CateringEventForm from "./components/CateringEventForm";
+import PageTitle from "./components/PageTitle";
+import PortableText from "@sanity/block-content-to-react";
+import PageIntro from "./components/PageIntro";
 
 const CateringPage = (props) => {
+  console.log(props);
   return (
     <Layout props={props}>
-      <h1>Catering </h1>
-      <p>
-        Vi har en stor erfarenhet av catering till både små och stora
-        tillställningar. Vi tar uppdrag för filmproduktioner, företag, privata
-        fester och kalas, studentfirande, bröllop, begravningar och allt
-        däremellan. Vi har också utformat en coronavänlig catering med små
-        mingeltallrikar istället för större bufféer. Skicka gärna en förfrågan
-        så kan vi se hur vi kan hjälpa er.
-      </p>
+      <PageTitle title={props.catering[0].titleCatering} />
+      <PageIntro>
+        <PortableText blocks={props.catering[0].cateringInfo} />{" "}
+      </PageIntro>
       <CateringEventForm />
     </Layout>
   );
@@ -23,7 +22,8 @@ const CateringPage = (props) => {
 
 const query = groq`{
     "footer": (*[_type == 'footer']),
-    "navigation": (*[_type== 'navigation'])
+    "navigation": (*[_type == 'navigation']),
+    'catering': (*[_type == 'catering'])
   }`;
 
 CateringPage.getInitialProps = async function () {
