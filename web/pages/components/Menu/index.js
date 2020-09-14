@@ -1,25 +1,28 @@
 import Style from "./style";
 import PortableText from "@sanity/block-content-to-react";
 import imageUrlBuilder from "../../../imageUrlBuilder";
+import PageIcon from "../PageIcon";
+import PageTitle from "../PageTitle";
+import PageIntro from "../PageIntro";
+import PageImage from "../PageImage";
 
-const Menu = ({ props }) => {
-  console.log(props);
+const Menu = ({ menu, icon }) => {
+  const IconSrc = icon.iconArray[3].iconImage.asset._ref;
+  const IconAlt = icon.iconArray[3].iconAlt;
+
   return (
     <Style.menu>
-      <Style.textContent>
-        <Style.textWrapper>
-          <h2 className="pageTitle">{props.titleMenu}</h2>
-        </Style.textWrapper>
-        <Style.textWrapper>
-          <PortableText blocks={props.menuText} />
-        </Style.textWrapper>
-      </Style.textContent>
-      <Style.imageWrapper>
-        <img
-          src={imageUrlBuilder(props.image.asset._ref)}
-          alt={props.imageAlt}
-        />
-      </Style.imageWrapper>
+      <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} />
+      <PageTitle title={menu.titleMenu} />
+
+      <PageIntro>
+        <PortableText blocks={menu.menuText} />
+      </PageIntro>
+
+      <PageImage
+        src={imageUrlBuilder(menu.image.asset._ref)}
+        alt={menu.imageAlt}
+      />
     </Style.menu>
   );
 };

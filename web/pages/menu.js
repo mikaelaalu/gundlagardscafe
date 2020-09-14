@@ -6,7 +6,7 @@ import Layout from "./components/Layout";
 const MenuPage = (props) => {
   return (
     <Layout props={props}>
-      <Menu props={props.menu[0]} />
+      <Menu menu={props.menu[0]} icon={props.icon[0]} />
     </Layout>
   );
 };
