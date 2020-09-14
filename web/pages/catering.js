@@ -2,27 +2,21 @@ import groq from "groq";
 import client from "../client";
 import FindUs from "./components/FindUs";
 import Layout from "./components/Layout";
+import CateringEventForm from "./components/CateringEventForm";
 
 const CateringPage = (props) => {
   return (
     <Layout props={props}>
       <h1>Catering </h1>
       <p>
-        Heeeeeeejidsvsdnjvndaf vn njdasnck nj dsn vadmnklcx'vdnjvfvf
-        Heeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvfHeeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvfHeeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvfHeeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvfHeeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvfHeeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvfHeeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvf Heeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvfHeeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvfHeeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvfHeeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvfHeeeeeeejidsvsdnjvndaf vn njdasnck nj dsn
-        vadmnklcx'vdnjvfvf
+        Vi har en stor erfarenhet av catering till både små och stora
+        tillställningar. Vi tar uppdrag för filmproduktioner, företag, privata
+        fester och kalas, studentfirande, bröllop, begravningar och allt
+        däremellan. Vi har också utformat en coronavänlig catering med små
+        mingeltallrikar istället för större bufféer. Skicka gärna en förfrågan
+        så kan vi se hur vi kan hjälpa er.
       </p>
+      <CateringEventForm />
     </Layout>
   );
 };
