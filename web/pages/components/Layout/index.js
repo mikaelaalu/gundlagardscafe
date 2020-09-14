@@ -4,9 +4,6 @@ import Style from "./style";
 import NavBar from "../NavBar";
 
 const Layout = ({ children, props }) => {
-  //loga mobile into navbar
-  //logo mobile in navbar -> burger -> rightnav
-
   return (
     <section>
       <NavBar

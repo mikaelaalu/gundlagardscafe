@@ -17,7 +17,7 @@ const NavBar = ({ props, logoMobile, logoDesktop }) => {
             </Style.logoMobile>
           </Link>
         </Style.logo>
-        <Burger props={props} />
+        <Burger props={props} logoDesktop={logoDesktop} />
       </Style.nav>
       <Style.margin />
     </>

@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Style from "./style";
+import imageUrlBuilder from "./../../../imageUrlBuilder";
 
-const RightNav = ({ props, open, setOpen }) => {
+const RightNav = ({ props, open, setOpen, logoDesktop }) => {
+  const iconSrc = logoDesktop.iconImage.asset._ref;
+  const iconAlt = logoDesktop.iconAlt;
   return (
     <Style.ul open={open}>
       <Style.exit onClick={() => setOpen(!open)}>
@@ -20,7 +23,9 @@ const RightNav = ({ props, open, setOpen }) => {
       </Link>
 
       <Link href="/">
-        <Style.logoDesktop>LOGGA desktop</Style.logoDesktop>
+        <Style.logoDesktop>
+          <Style.logo src={imageUrlBuilder(iconSrc)} alt={iconAlt} />
+        </Style.logoDesktop>
       </Link>
 
       <Link href="/event">

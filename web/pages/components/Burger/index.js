@@ -2,7 +2,7 @@ import { useState } from "react";
 import Style from "./style";
 import RightNav from "../RightNav";
 
-const Burger = ({ props }) => {
+const Burger = ({ props, logoDesktop }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -12,7 +12,12 @@ const Burger = ({ props }) => {
         <div></div>
         <div></div>
       </Style.burger>
-      <RightNav props={props} open={open} setOpen={setOpen} />
+      <RightNav
+        props={props}
+        open={open}
+        setOpen={setOpen}
+        logoDesktop={logoDesktop}
+      />
     </div>
   );
 };

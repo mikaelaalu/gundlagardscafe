@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+const logo = styled.img`
+  width: 114px;
+  height: 180px;
+`;
+
 const logoDesktop = styled.a`
   display: flex;
 
@@ -79,4 +84,4 @@ const crossTwo = styled.div`
   transform: rotate(-45deg);
 `;
 
-export default { ul, exit, crossOne, crossTwo, logoDesktop };
+export default { ul, exit, crossOne, crossTwo, logoDesktop, logo };
