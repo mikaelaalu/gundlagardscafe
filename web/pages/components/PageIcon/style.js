@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 const iconWrapper = styled.div`
-  width: 100vw;
-  height: 100vw;
+  width: 45px;
+  height: auto;
+  background-color: var(--light-black);
 
   img {
     width: 100%;

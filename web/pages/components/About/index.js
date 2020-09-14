@@ -3,7 +3,7 @@ import PortableText from "@sanity/block-content-to-react";
 import imageUrlBuilder from "../../../imageUrlBuilder";
 import PageIntro from "../PageIntro";
 import PageTitle from "../PageTitle";
-import PageIcon from "../PageIcon";
+import PageImage from "../PageImage";
 
 const About = ({ props }) => {
   return (
@@ -16,7 +16,7 @@ const About = ({ props }) => {
         </PageIntro>
       </div>
 
-      <PageIcon
+      <PageImage
         src={imageUrlBuilder(props.image.asset._ref)}
         alt={props.imageAlt}
       />
