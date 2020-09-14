@@ -2,7 +2,6 @@ import Style from "./style";
 import imageUrlBuilder from "./../../../imageUrlBuilder";
 
 const Footer = ({ props, icons }) => {
-  console.log(icons);
   const iconSrc = icons.iconArray[6].iconImage.asset._ref;
   const iconAlt = icons.iconArray[6].iconAlt;
   const facebookSrc = icons.iconArray[7].iconImage.asset._ref;
