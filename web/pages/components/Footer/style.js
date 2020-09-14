@@ -26,8 +26,21 @@ const footer = styled.footer`
 `;
 
 const logo = styled.img`
-  width: 54px;
-  height: 88px;
+  width: 60px;
+  height: 90px;
 `;
 
-export default { footer, title, box, a, logo };
+const icon = styled.img`
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+`;
+
+const flex = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  margin-bottom: 7px;
+`;
+
+export default { footer, title, box, a, logo, icon, flex };

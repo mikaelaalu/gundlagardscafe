@@ -12,7 +12,7 @@ const Layout = ({ children, props }) => {
         logoDesktop={props.icon[0].iconArray[4]}
       />
       {children}
-      <Footer props={props.footer[0]} logo={props.icon[0].iconArray[6]} />
+      <Footer props={props.footer[0]} icons={props.icon[0]} />
     </section>
   );
 };
