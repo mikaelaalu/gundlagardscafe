@@ -5,6 +5,7 @@ const OpeningHours = ({ props }) => {
   return (
     <Style.box>
       <h2>{props.titleOpening}</h2>
+
       <Style.timeBox>
         <p>{props.monday}</p>
         <p>{props.openMonday}</p>
