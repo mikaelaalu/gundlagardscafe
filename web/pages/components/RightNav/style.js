@@ -74,14 +74,14 @@ const crossOne = styled.div`
   width: 25px;
   height: 2px;
   background-color: var(--white);
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(4px, 5px);
 `;
 
 const crossTwo = styled.div`
   width: 25px;
   height: 2px;
   background-color: var(--white);
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(2px, -3px);
 `;
 
 export default { ul, exit, crossOne, crossTwo, logoDesktop, logo };
