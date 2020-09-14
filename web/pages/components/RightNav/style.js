@@ -6,10 +6,10 @@ const logo = styled.img`
 `;
 
 const logoDesktop = styled.a`
-  display: flex;
+  display: none;
 
-  @media (max-width: 768px) {
-    display: none;
+  @media (min-width: 768px) {
+    display: flex;
   }
 `;
 

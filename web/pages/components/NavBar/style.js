@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const logoMobile = styled.a`
-  display: none;
+  display: flex;
 
-  @media (max-width: 768px) {
-    display: flex;
+  @media (min-width: 768px) {
+    display: none;
   }
 `;
 const margin = styled.div`
@@ -27,13 +27,7 @@ const logo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  width: 100%;
 `;
 
 const icon = styled.img`
