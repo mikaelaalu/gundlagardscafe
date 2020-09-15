@@ -120,5 +120,11 @@ export default {
       description:
         "En kort beskrivning av bilden så att även den som inte kan se bilden får den väsentliga informationen från bilden.",
     },
+
+    {
+      name: "instagram",
+      type: "string",
+      title: "Följ oss på Instagram",
+    },
   ],
 };

@@ -1,16 +1,21 @@
-const InstagramFeed = ({ props }) => {
-  const allImages = props.graphql.user.edge_owner_to_timeline_media.edges;
-  const sixImages = allImages.slice(0, 6);
+import Style from "./style";
 
+const InstagramFeed = ({ props, title }) => {
+  const allImages = props.graphql.user.edge_owner_to_timeline_media.edges;
+  const fourImages = allImages.slice(0, 4);
+  console.log(title);
   return (
-    <div>
-      <h2>Wow this is cool, it's a instagramfeed!!</h2>
-      {sixImages.map((image, i) => (
-        <div key={i}>
-          <img width={"200px"} src={image.node.display_url} key={i}></img>
-        </div>
-      ))}
-    </div>
+    <section>
+      <Style.title>{title}</Style.title>
+
+      <Style.imgWrapper>
+        {fourImages.map((image, i) => (
+          <div key={i}>
+            <Style.img width={"200px"} src={image.node.display_url} key={i} />
+          </div>
+        ))}
+      </Style.imgWrapper>
+    </section>
   );
 };
 

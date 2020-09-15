@@ -6,12 +6,12 @@ import PageIcon from "./components/PageIcon";
 import imageUrlBuilder from "../imageUrlBuilder";
 
 const AboutPage = (props) => {
-  console.log("about page:");
-  console.log(props);
+  // console.log("about page:");
+  // console.log(props);
 
   return (
     <Layout props={props}>
-      <About about={props.about[0]} icon={props.icon[0]} /> 
+      <About about={props.about[0]} icon={props.icon[0]} />
     </Layout>
   );
 };
