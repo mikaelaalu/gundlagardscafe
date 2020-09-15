@@ -12,8 +12,12 @@ const FindUs = ({ findUs, icon }) => {
   return (
     <Style.findUs>
       <div className="textContent">
-        <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} />
-        <PageTitle title={findUs.titleFindUs} />
+        <div className="iconAndTitleContainer">
+          <div className="iconAndTitleWrapper">
+            <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} />
+            <PageTitle title={findUs.titleFindUs} />
+          </div>
+        </div>
 
         <PageIntro>
           <PortableText blocks={findUs.findUsText} />

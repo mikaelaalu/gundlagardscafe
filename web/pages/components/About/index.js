@@ -4,7 +4,7 @@ import imageUrlBuilder from "../../../imageUrlBuilder";
 import PageIcon from "../PageIcon";
 import PageIntro from "../PageIntro";
 import PageTitle from "../PageTitle";
-import PageImage from "../PageImage"; 
+import PageImage from "../PageImage";
 
 const About = ({ about, icon }) => {
   const IconSrc = icon.iconArray[1].iconImage.asset._ref;
@@ -14,9 +14,12 @@ const About = ({ about, icon }) => {
   return (
     <Style.about>
       <div className="textContent">
-        <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} /> 
-
-        <PageTitle title={about.titleAbout} />
+        <div className="iconAndTitleContainer">
+          <div className="iconAndTitleWrapper">
+            <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} />
+            <PageTitle title={about.titleAbout} />
+          </div>
+        </div>
 
         <PageIntro>
           <PortableText blocks={about.aboutText} />

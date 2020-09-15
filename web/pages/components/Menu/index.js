@@ -12,8 +12,12 @@ const Menu = ({ menu, icon }) => {
 
   return (
     <Style.menu>
-      <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} />
-      <PageTitle title={menu.titleMenu} />
+      <div className="iconAndTitleContainer">
+        <div className="iconAndTitleWrapper">
+          <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} />
+          <PageTitle title={menu.titleMenu} />
+        </div>
+      </div>
 
       <PageIntro>
         <PortableText blocks={menu.menuText} />

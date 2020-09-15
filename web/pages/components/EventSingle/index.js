@@ -1,4 +1,4 @@
-// import Style from "./style";
+//import Style from "./style";
 
 const Event = (props) => {
   return (
