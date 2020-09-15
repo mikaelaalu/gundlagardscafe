@@ -8,7 +8,7 @@ const logoMobile = styled.a`
   }
 `;
 const margin = styled.div`
-  margin-bottom: 102px;
+  margin-bottom: 136px;
 `;
 
 const nav = styled.nav`

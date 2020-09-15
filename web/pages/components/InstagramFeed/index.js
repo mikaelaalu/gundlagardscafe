@@ -11,7 +11,7 @@ const InstagramFeed = ({ props, title }) => {
       <Style.imgWrapper>
         {fourImages.map((image, i) => (
           <div key={i}>
-            <Style.img width={"200px"} src={image.node.display_url} key={i} />
+            <Style.img src={image.node.display_url} key={i} />
           </div>
         ))}
       </Style.imgWrapper>
