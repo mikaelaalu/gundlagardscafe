@@ -22,9 +22,10 @@ const ul = styled.ul`
   flex-flow: row nowrap;
   height: 102px;
   width: 100vw;
+  padding: 0 10%;
 
   section {
-    margin-top: 60px;
+    margin-top: 40px;
     width: 100%;
     text-align: center;
   }
@@ -34,7 +35,6 @@ const ul = styled.ul`
     color: black;
     font-weight: bold;
     font-size: 16px;
-
     width: 114px;
   }
 
@@ -51,6 +51,11 @@ const ul = styled.ul`
     transition: transform 0.3s ease-in-out;
     align-items: flex-start;
     justify-content: center;
+
+    section {
+      margin-top: 30px;
+      text-align: left;
+    }
 
     a {
       padding: 17px 24px;
