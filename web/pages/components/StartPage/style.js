@@ -7,9 +7,9 @@ const title = styled.h1`
 `;
 
 const box = styled.div`
-  width: 157px;
-  height: 171px;
-  margin: 6px;
+  width: 42vw;
+  height: 47vw;
+  margin: 8px;
   color: var(--white);
   display: flex;
   align-items: center;
@@ -23,8 +23,7 @@ const container = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
-  margin-top: 5%;
+  margin-bottom: 80px;
 `;
 
 const wrapper = styled.div`

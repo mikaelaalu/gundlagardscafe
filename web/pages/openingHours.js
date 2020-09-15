@@ -4,7 +4,6 @@ import OpeningHours from "./components/OpeningHours";
 import Layout from "./components/Layout";
 
 const OpeningHoursPage = (props) => {
-  console.log(props);
   return (
     <Layout props={props}>
       <OpeningHours

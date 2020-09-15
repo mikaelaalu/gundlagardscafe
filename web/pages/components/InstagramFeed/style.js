@@ -12,7 +12,12 @@ const imgWrapper = styled.div`
 
 const img = styled.img`
   width: 100%;
+  height: 100%;
   padding: 5px;
 `;
+
+// const imageContainer = styled.div`
+//   width: ;
+// `;
 
 export default { imgWrapper, img, title };

@@ -2,7 +2,7 @@ import Style from "./style";
 import Link from "next/link";
 import imageUrlBuilder from "../../../imageUrlBuilder";
 
-const Navigation = ({ props, icon }) => {
+const StartPage = ({ props, icon }) => {
   const iconSrc = icon.iconImage.asset._ref;
   const iconAlt = icon.iconAlt;
 
@@ -46,4 +46,4 @@ const Navigation = ({ props, icon }) => {
   );
 };
 
-export default Navigation;
+export default StartPage;

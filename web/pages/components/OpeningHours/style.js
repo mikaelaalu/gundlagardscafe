@@ -5,13 +5,17 @@ const box = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+
+  h2 {
+    margin-top: 10px;
+  }
 `;
 
 const timeBox = styled.div`
   display: flex;
   width: 40%;
   justify-content: space-between;
+  margin-top: 20px;
 `;
 
 const icon = styled.img`
@@ -19,4 +23,9 @@ const icon = styled.img`
   height: 50px;
 `;
 
-export default { box, timeBox, icon };
+const infoText = styled.p`
+  margin-top: 34px;
+  padding-bottom: 85px;
+`;
+
+export default { box, timeBox, icon, infoText };
