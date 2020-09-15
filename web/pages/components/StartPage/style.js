@@ -3,7 +3,9 @@ import styled from "styled-components";
 const title = styled.h1`
   font-size: 40px;
   text-align: center;
-  width: 90%;
+  width: 70vw;
+  margin-top: 10px;
+  margin-bottom: 50px;
 `;
 
 const box = styled.div`
@@ -31,7 +33,6 @@ const wrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 10%;
 `;
 
 const a = styled.a`
