@@ -12,14 +12,20 @@ const RightNav = ({ props, open, setOpen, logoDesktop }) => {
         <Style.crossTwo></Style.crossTwo>
       </Style.exit>
       <Link href="/openingHours">
-        <a>{props.openingHours}</a>
+        <section>
+          <a>{props.openingHours}</a>
+        </section>
       </Link>
       <Link href="/findUs">
-        <a>{props.findUs}</a>
+        <section>
+          <a>{props.findUs}</a>
+        </section>
       </Link>
 
       <Link href="/about">
-        <a>{props.about}</a>
+        <section>
+          <a>{props.about}</a>
+        </section>
       </Link>
 
       <Link href="/">
@@ -29,13 +35,19 @@ const RightNav = ({ props, open, setOpen, logoDesktop }) => {
       </Link>
 
       <Link href="/event">
-        <a>{props.event}</a>
+        <section>
+          <a>{props.event}</a>
+        </section>
       </Link>
       <Link href="/catering">
-        <a>{props.catering}</a>
+        <section>
+          <a>{props.catering}</a>
+        </section>
       </Link>
       <Link href="/menu">
-        <a>{props.menu}</a>
+        <section>
+          <a>{props.menu}</a>
+        </section>
       </Link>
     </Style.ul>
   );

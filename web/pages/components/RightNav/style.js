@@ -9,7 +9,8 @@ const logoDesktop = styled.a`
   display: none;
 
   @media (min-width: 768px) {
-    display: flex;
+    display: block;
+    margin-top: 60px;
   }
 `;
 
@@ -17,18 +18,24 @@ const logoDesktop = styled.a`
 const ul = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-flow: row nowrap;
   height: 102px;
   width: 100vw;
-  padding: 60px 10% 32px 10%;
+
+  section {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+  }
 
   a {
-    padding: 18px 10px;
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: 16px;
+
+    width: 114px;
   }
 
   @media (max-width: 768px) {
