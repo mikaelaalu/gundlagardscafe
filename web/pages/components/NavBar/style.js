@@ -9,6 +9,10 @@ const logoMobile = styled.a`
 `;
 const margin = styled.div`
   height: 136px;
+
+  @media (min-width: 768px) {
+    height: 187px;
+  }
 `;
 
 const nav = styled.nav`
@@ -17,7 +21,6 @@ const nav = styled.nav`
   background-color: var(--dipp-beige);
   position: fixed;
   top: 0;
-  padding: 0 20px;
   display: flex;
   justify-content: space-between;
 `;
