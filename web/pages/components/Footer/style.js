@@ -13,6 +13,7 @@ const title = styled.h3`
 const box = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 `;
 
 const footer = styled.footer`
@@ -21,13 +22,14 @@ const footer = styled.footer`
   height: 580px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 6%;
+  padding: 24px;
 `;
 
 const logo = styled.img`
   width: 60px;
   height: 90px;
+  margin-top: 56px;
+  margin-bottom: 52px;
 `;
 
 const icon = styled.img`
@@ -39,8 +41,7 @@ const icon = styled.img`
 const flex = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 16px;
 `;
 
 export default { footer, title, box, a, logo, icon, flex };
