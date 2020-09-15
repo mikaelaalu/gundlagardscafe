@@ -6,7 +6,7 @@ import Layout from "./components/Layout";
 const FindUsPage = (props) => {
   return (
     <Layout props={props}>
-      <FindUs props={props.findUs[0]} />
+      <FindUs findUs={props.findUs[0]} icon={props.icon[0]} />
     </Layout>
   );
 };
