@@ -12,7 +12,7 @@ const About = ({ about, icon }) => {
   console.log(icon);
 
   return (
-    <Style.about>
+    <Style.about> 
       <div className="textContent">
         <div className="iconAndTitleContainer">
           <div className="iconAndTitleWrapper">

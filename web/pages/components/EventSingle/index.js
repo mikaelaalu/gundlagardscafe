@@ -1,16 +1,24 @@
-//import Style from "./style";
+import Style from "./style";
 
-const Event = (props) => {
+const SingleEvent = ({ event }) => {
   return (
-    <div>
-      <h3>{props.title}</h3>
-      <div>
-        <img src={props.src} alt={props.alt} />
-      </div>
-      <p>{props.date}</p>
-      <p>{props.time}</p>
-    </div>
+    <Style.singleEventWrapper>
+      <h3>{event.title}</h3>
+
+      <Style.dateTimeWrapper>
+        <p>datum</p>
+        <p>tid</p>
+      </Style.dateTimeWrapper>
+      <Style.dateTimeWrapper>
+        <p>datum</p>
+        <p>tid</p>
+      </Style.dateTimeWrapper>
+      <Style.dateTimeWrapper>
+        <p>datum</p>
+        <p>tid</p>
+      </Style.dateTimeWrapper>
+    </Style.singleEventWrapper>
   );
 };
 
-export default Event;
+export default SingleEvent;

@@ -1,32 +1,18 @@
 import groq from "groq";
 import client from "../client";
 import Layout from "./components/Layout";
-import EventIntro from "./components/EventIntro";
-import Event from "./components/EventSingle";
+import Event from "./components/Event";
 import EventForm from "./components/Forms/eventForm";
 
 const EventPage = (props) => {
-  const events = props.event;
-  console.log(events);
-
   return (
     <Layout props={props}>
-      <section className="event">
-        <EventIntro event={props.eventInformation[0]} icon={props.icon[0]} />
-
-        {/* <Event title="Title" date="date" time="time" /> */}
-
-        {events.map((event, key) => (
-          <Event
-            key={key}
-            title={event.title}
-            //   date={event.eventDates}
-            /* src={item.image.asset._ref}  alt={event.imageAlt}*/
-          />
-        ))}
-
-        <EventForm />
-      </section>
+      <Event
+        eventInformation={props.eventInformation[0]}
+        event={props.event}
+        icon={props.icon[0]}
+      />
+      <EventForm />
     </Layout>
   );
 };

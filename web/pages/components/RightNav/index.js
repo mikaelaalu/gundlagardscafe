@@ -6,12 +6,12 @@ const RightNav = ({ props, open, setOpen, logoDesktop }) => {
   const iconSrc = logoDesktop.iconImage.asset._ref;
   const iconAlt = logoDesktop.iconAlt;
   return (
-    <Style.ul open={open}>
+    <Style.ul open={open}> 
       <Style.exit onClick={() => setOpen(!open)}>
         <Style.crossOne></Style.crossOne>
         <Style.crossTwo></Style.crossTwo>
       </Style.exit>
-      <Link href="/openingHours">
+      <Link href="/openingHours"> 
         <section>
           <a>{props.openingHours}</a>
         </section>

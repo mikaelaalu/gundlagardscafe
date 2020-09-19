@@ -12,9 +12,18 @@ export default {
     {
       name: "description",
       type: "array",
-      of: [{ type: "block" }],
       title: "Beskrivning",
-      description: "En inledande text till sidan och dess innehåll.",
+      description:
+        "En inledande text till sidan och dess innehåll. I listan till vänster här under kan du välja Rubrik eller Text",
+      of: [
+        {
+          type: "block",
+          styles: [
+            { title: "Text", value: "normal" },
+            { title: "Rubrik", value: "h3" },
+          ],
+        },
+      ],
     },
   ],
 };
