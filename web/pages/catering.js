@@ -1,7 +1,7 @@
 import groq from "groq";
 import client from "../client";
-import FindUs from "./components/FindUs";
 import Layout from "./components/Layout";
+import Catering from "./components/Catering";
 import CateringForm from "./components/Forms/cateringForm";
 import PageTitle from "./components/PageTitle";
 import PortableText from "@sanity/block-content-to-react";
@@ -10,12 +10,14 @@ import PageIntro from "./components/PageIntro";
 const CateringPage = (props) => {
   return (
     <Layout props={props}>
-      <div className="textContent">
+      {/* <div className="textContent">
         <PageTitle title={props.catering[0].titleCatering} />
         <PageIntro>
-          <PortableText blocks={props.catering[0].cateringInfo} />{" "}
+          <PortableText blocks={props.catering[0].cateringInfo} />
         </PageIntro>
-      </div>
+      </div> */}
+
+      <Catering catering={props.catering[0]} icon={props.icon[0]} />
       <CateringForm />
     </Layout>
   );

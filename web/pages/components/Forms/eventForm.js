@@ -25,6 +25,11 @@ const CateringEventForm = () => {
 
   return (
     <Style.container>
+      <Style.bookEventDiv>
+        <h3>Boka plats</h3>
+        <p>Vill du boka plats på ett pass eller ett event?</p>
+        <p>Fyll i formuläret och se om det finns lediga platser.</p>
+      </Style.bookEventDiv>
       <Style.form
         onSubmit={sendEmail}
         action="https://formspree.io/mpzoaprl"

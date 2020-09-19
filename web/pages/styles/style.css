@@ -22,12 +22,19 @@ p {
 
 h3 {
   font-size: 24px;
+  margin-top: 30px;
 }
 
 p {
   font-size: 18px;
   line-height: 1.5;
 }
+
+/* if two <p> elements are placed after each other 
+p + p {
+  margin-top: 20px;
+}
+*/
 
 a,
 a:visited {

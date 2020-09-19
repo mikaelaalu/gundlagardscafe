@@ -5,12 +5,11 @@ const pageTitle = styled.div`
 
   h2 {
     font-size: 24px;
-  }
 
-  /*
-  :hover {
-    color: red;
-  } */
+    @media (min-width: 768px) {
+      font-size: 48px;
+    }
+  }
 `;
 
 export default { pageTitle };

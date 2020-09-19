@@ -5,7 +5,7 @@ import NavBar from "../NavBar";
 
 const Layout = ({ children, props }) => {
   return (
-    <section>
+    <Style.layout>
       <NavBar
         props={props.navigation[0]}
         logoMobile={props.icon[0].iconArray[5]}
@@ -13,7 +13,7 @@ const Layout = ({ children, props }) => {
       />
       {children}
       <Footer props={props.footer[0]} icons={props.icon[0]} />
-    </section>
+    </Style.layout>
   );
 };
 

@@ -10,4 +10,9 @@ const wrapper = styled.section`
   top: 0;
 `;
 
-export default { wrapper };
+const layout = styled.section`
+  width: 100vw;
+  margin: 0;
+`;
+
+export default { wrapper, layout };

@@ -8,7 +8,7 @@ const OpeningHours = ({ props, icon }) => {
     <div className="textContent">
       <Style.icon src={imageUrlBuilder(iconSrc)} alt={iconAlt} />
       <Style.box>
-        <h2>{props.titleOpening}</h2>
+        <PageTitle title={props.titleOpening} />
         <Style.timeBox>
           <p>{props.monday}</p>
           <p>{props.openMonday}</p>

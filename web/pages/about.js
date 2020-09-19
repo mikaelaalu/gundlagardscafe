@@ -2,8 +2,6 @@ import groq from "groq";
 import client from "../client";
 import Layout from "./components/Layout";
 import About from "./components/About";
-import PageIcon from "./components/PageIcon";
-import imageUrlBuilder from "../imageUrlBuilder";
 
 const AboutPage = (props) => {
   // console.log("about page:");

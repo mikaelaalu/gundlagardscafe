@@ -36,6 +36,7 @@ const ul = styled.ul`
     font-weight: bold;
     font-size: 16px;
     width: 114px;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {
