@@ -2,7 +2,6 @@ import Style from "./style";
 import PortableText from "@sanity/block-content-to-react";
 import imageUrlBuilder from "../../../imageUrlBuilder";
 import PageIcon from "../PageIcon";
-import PageIntro from "../PageIntro";
 import PageTitle from "../PageTitle";
 
 const Catering = ({ catering, icon }) => {

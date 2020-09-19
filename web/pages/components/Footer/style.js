@@ -13,16 +13,20 @@ const title = styled.h3`
 const box = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 `;
 
 const footer = styled.footer`
   color: white;
   background-color: var(--secondary-mud);
-  height: 580px;
+  /* height: 580px; */
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 30px 24px 80px 24px;
+
+  @media (min-width: 768px) {
+    margin-top: 200px;
+  }
 `;
 
 const logo = styled.img`

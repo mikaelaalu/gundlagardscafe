@@ -104,3 +104,9 @@ a:visited {
 .attachButtonMargins {
   margin: 16px 0px;
 }
+
+@media only screen and (min-width: 768px) {
+  .iconAndTitleContainer {
+    width: 100%;
+  }
+}
