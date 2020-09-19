@@ -4,7 +4,7 @@ const textWrapper = styled.div`
   width: 90%;
 
   @media (min-width: 768px) {
-    /* width: 45%; */
+    width: 100%;
   }
 `;
 
