@@ -27,3 +27,4 @@ const Catering = ({ catering, icon }) => {
 };
 
 export default Catering;
+ 

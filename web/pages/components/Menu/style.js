@@ -9,7 +9,6 @@ const menu = styled.section`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: center;
-    margin-top: 100px;
     padding: 0 50px;
   }
 `;

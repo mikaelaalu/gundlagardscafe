@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const logo = styled.img`
-  width: 114px;
-  height: 180px;
+  width: 78px;
+  height: 121px;
 `;
 
 const logoDesktop = styled.a`
@@ -10,7 +10,7 @@ const logoDesktop = styled.a`
 
   @media (min-width: 768px) {
     display: block;
-    margin-top: 60px;
+    margin-top: 20px;
   }
 `;
 
@@ -25,7 +25,7 @@ const ul = styled.ul`
   padding: 0 10%;
 
   section {
-    margin-top: 40px;
+    margin-top: 30px;
     width: 100%;
     text-align: center;
   }

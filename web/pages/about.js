@@ -6,7 +6,7 @@ import About from "./components/About";
 const AboutPage = (props) => {
   // console.log("about page:");
   // console.log(props);
-
+ 
   return (
     <Layout props={props}>
       <About about={props.about[0]} icon={props.icon[0]} />

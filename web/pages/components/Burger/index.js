@@ -16,7 +16,7 @@ const Burger = ({ props, logoDesktop }) => {
         props={props}
         open={open}
         setOpen={setOpen}
-        logoDesktop={logoDesktop}
+        logoDesktop={logoDesktop} 
       />
     </div>
   );
