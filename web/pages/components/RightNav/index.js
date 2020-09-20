@@ -27,7 +27,7 @@ const RightNav = ({ props, open, setOpen, logoDesktop }) => {
           <a>{props.about}</a>
         </section>
       </Link>
-
+ 
       <Link href="/">
         <Style.logoDesktop>
           <Style.logo src={imageUrlBuilder(iconSrc)} alt={iconAlt} />

@@ -7,7 +7,7 @@ const FindUsPage = (props) => {
   return (
     <Layout props={props}>
       <FindUs findUs={props.findUs[0]} icon={props.icon[0]} />
-    </Layout>
+    </Layout> 
   );
 };
 

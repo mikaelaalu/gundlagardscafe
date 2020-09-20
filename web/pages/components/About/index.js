@@ -9,11 +9,11 @@ import PageImage from "../PageImage";
 const About = ({ about, icon }) => {
   const IconSrc = icon.iconArray[1].iconImage.asset._ref;
   const IconAlt = icon.iconArray[1].iconAlt;
-  console.log(icon);
+  console.log(about);
 
   return (
-    <Style.about> 
-      <div className="textContent">
+    <Style.about>
+      <Style.aboutTextWrapper>
         <div className="iconAndTitleContainer">
           <div className="iconAndTitleWrapper">
             <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} />
@@ -24,7 +24,7 @@ const About = ({ about, icon }) => {
         <PageIntro>
           <PortableText blocks={about.aboutText} />
         </PageIntro>
-      </div>
+      </Style.aboutTextWrapper>
 
       <PageImage
         src={imageUrlBuilder(about.image.asset._ref)}

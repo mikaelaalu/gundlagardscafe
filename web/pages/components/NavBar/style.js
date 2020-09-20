@@ -11,7 +11,7 @@ const margin = styled.div`
   height: 136px;
 
   @media (min-width: 768px) {
-    height: 187px;
+    height: 202px;
   }
 `;
 
