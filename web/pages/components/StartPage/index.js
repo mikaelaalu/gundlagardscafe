@@ -3,13 +3,24 @@ import Link from "next/link";
 import imageUrlBuilder from "../../../imageUrlBuilder";
 
 const StartPage = ({ props, icon }) => {
-  const iconSrc = icon.iconImage.asset._ref;
-  const iconAlt = icon.iconAlt;
+  const iconTreeSrc = icon.iconImage.asset._ref;
+  const iconTreeAlt = icon.iconAlt;
 
   return (
     <Style.container>
-      <Style.icon src={imageUrlBuilder(iconSrc)} alt={iconAlt} />
-      <Style.title>{props.title}</Style.title>
+      <Style.iconMobile src={imageUrlBuilder(iconTreeSrc)} alt={iconTreeAlt} />
+      <Style.flexTitle>
+        <Style.bigIconDesktop
+          src={imageUrlBuilder(iconTreeSrc)}
+          alt={iconTreeAlt}
+        />
+
+        <Style.title>{props.title}</Style.title>
+        <Style.bigIconDesktop
+          src={imageUrlBuilder(iconTreeSrc)}
+          alt={iconTreeAlt}
+        />
+      </Style.flexTitle>
       <Style.wrapper>
         <Link href="/openingHours">
           <Style.box img={imageUrlBuilder(props.imageOpeningHours.asset._ref)}>

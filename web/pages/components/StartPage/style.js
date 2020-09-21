@@ -6,6 +6,10 @@ const title = styled.h1`
   width: 70vw;
   margin-top: 10px;
   margin-bottom: 50px;
+  @media (min-width: 768px) {
+    margin-bottom: 0px;
+    font-size: 60px;
+  }
 `;
 
 const box = styled.div`
@@ -18,6 +22,11 @@ const box = styled.div`
   justify-content: center;
   background-image: url(${(p) => p.img});
   background-size: cover;
+
+  @media (min-width: 768px) {
+    width: 207px;
+    height: 337px;
+  }
 `;
 
 const container = styled.section`
@@ -33,6 +42,10 @@ const wrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    margin-top: 80px;
+  }
 `;
 
 const a = styled.a`
@@ -40,9 +53,47 @@ const a = styled.a`
   font-size: 24px;
 `;
 
-const icon = styled.img`
+const iconMobile = styled.img`
   width: 60px;
   height: 50px;
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
-export default { box, wrapper, container, title, a, icon };
+const smallIconDesktop = styled.img`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 40px;
+    height: 50px;
+  }
+`;
+
+const bigIconDesktop = styled.img`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 164px;
+    height: 135px;
+  }
+`;
+
+const flexTitle = styled.div`
+  display: flex;
+  width: 70%;
+`;
+
+export default {
+  box,
+  wrapper,
+  container,
+  title,
+  a,
+  iconMobile,
+  smallIconDesktop,
+  bigIconDesktop,
+  flexTitle,
+};
