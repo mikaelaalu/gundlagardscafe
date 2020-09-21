@@ -1,7 +1,7 @@
-import imageUrlBuilder from "/../../../imageUrlBuilder";
+import imageUrlBuilder from "./../../imageUrlBuilder";
 import styled from "styled-components";
 
-const A = styled.a`
+const Link = styled.a`
   color: white;
   text-decoration: none;
 `;
@@ -17,7 +17,7 @@ const Box = styled.div`
   /* margin-bottom: 40px; */
 `;
 
-const Footer = styled.footer`
+const FooterWrapper = styled.footer`
   color: white;
   background-color: var(--secondary-mud);
   /* height: 580px; */
@@ -64,17 +64,17 @@ const Footer = ({ props, icons }) => {
   const addressAlt = icons.iconArray[11].iconAlt;
 
   return (
-    <Footer>
+    <FooterWrapper>
       <Logo src={imageUrlBuilder(iconSrc)} alt={iconAlt} />
       <Box>
         <Title>{props.follow}</Title>
         <Flex>
           <Icon src={imageUrlBuilder(facebookSrc)} alt={facebookAlt} />
-          <A href={props.facebookLink}>{props.facebook}</Style.a>
+          <Link href={props.facebookLink}>{props.facebook}</Link>
         </Flex>
         <Flex>
           <Icon src={imageUrlBuilder(instagramSrc)} alt={instagramAlt} />
-          <A href={props.instagramLink}>{props.instagram}</A>
+          <Link href={props.instagramLink}>{props.instagram}</Link>
         </Flex>
       </Box>
 
@@ -93,7 +93,7 @@ const Footer = ({ props, icons }) => {
           <p>{props.address}</p>
         </Flex>
       </Box>
-    </Footer>
+    </FooterWrapper>
   );
 };
 
