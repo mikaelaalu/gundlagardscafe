@@ -1,16 +1,34 @@
-import Style from "./style";
 import PortableText from "@sanity/block-content-to-react";
-import imageUrlBuilder from "../../../imageUrlBuilder";
-import PageIcon from "../PageIcon";
-import PageTitle from "../PageTitle";
+import imageUrlBuilder from "./../../imageUrlBuilder";
+import PageIcon from "./PageIcon";
+import PageTitle from "./PageTitle";
+import styled from "styled-components";
+
+const CateringSection = styled.section`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+const TextWrapper = styled.div`
+  width: 90%;
+
+  @media (min-width: 768px) {
+    width: 45%;
+  }
+`;
+
+const Info = styled.div`
+  margin: 24px 0;
+`;
 
 const Catering = ({ catering, icon }) => {
   const IconSrc = icon.iconArray[0].iconImage.asset._ref;
   const IconAlt = icon.iconArray[0].iconAlt;
 
   return (
-    <Style.catering>
-      <Style.textWrapper>
+    <CateringSection>
+      <TextWrapper>
         <div className="iconAndTitleContainer">
           <div className="iconAndTitleWrapper">
             <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} />
@@ -18,13 +36,12 @@ const Catering = ({ catering, icon }) => {
           </div>
         </div>
 
-        <Style.info>
+        <Info>
           <PortableText blocks={catering.cateringInfo} />
-        </Style.info>
-      </Style.textWrapper>
-    </Style.catering>
+        </Info>
+      </TextWrapper>
+    </CateringSection>
   );
 };
 
 export default Catering;
- 
