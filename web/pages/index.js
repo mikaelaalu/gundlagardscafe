@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import StartPage from "./components/StartPage";
 import InstagramFeed from "./components/InstagramFeed";
 const Index = (props) => {
+  console.log(props[0].icon[0]);
   return (
     <Layout props={props[0]}>
       <StartPage
