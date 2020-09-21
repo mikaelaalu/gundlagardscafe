@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const pageTitle = styled.div`
+const Title = styled.div`
   margin-top: 10px;
 
   h2 {
@@ -12,4 +12,12 @@ const pageTitle = styled.div`
   }
 `;
 
-export default { pageTitle };
+const PageTitle = (props) => {
+  return (
+    <Title>
+      <h2>{props.title}</h2>
+    </Title>
+  );
+};
+
+export default PageTitle;
