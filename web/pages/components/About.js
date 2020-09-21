@@ -12,7 +12,7 @@ const AboutSection = styled.section`
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) { 
     flex-direction: row;
     justify-content: center;
     padding: 0 50px;

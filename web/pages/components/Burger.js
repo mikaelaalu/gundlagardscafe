@@ -2,7 +2,7 @@ import { useState } from "react";
 import RightNav from "./RightNav";
 import styled from "styled-components";
 
-const Burger = styled.div`
+const HamburgerMenu = styled.div`
   width: 25px;
   height: 20px;
   position: fixed;
@@ -29,11 +29,11 @@ const Burger = ({ props, logoDesktop }) => {
 
   return (
     <div>
-      <Burger open={open} onClick={() => setOpen(!open)}>
+      <HamburgerMenu open={open} onClick={() => setOpen(!open)}>
         <div></div>
         <div></div>
         <div></div>
-      </Burger>
+      </HamburgerMenu>
       <RightNav
         props={props}
         open={open}
