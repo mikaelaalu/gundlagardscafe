@@ -1,7 +1,7 @@
 import groq from "groq";
 import client from "../client";
 import OpeningHours from "./components/OpeningHours";
-import Layout from "./components/Layout";
+import Layout from "./components/Layout"; 
 
 const OpeningHoursPage = (props) => {
   return (

@@ -5,6 +5,7 @@ import imageUrlBuilder from "./../../../imageUrlBuilder";
 const RightNav = ({ props, open, setOpen, logoDesktop }) => {
   const iconSrc = logoDesktop.iconImage.asset._ref;
   const iconAlt = logoDesktop.iconAlt;
+  
   return (
     <Style.ul open={open}> 
       <Style.exit onClick={() => setOpen(!open)}>
