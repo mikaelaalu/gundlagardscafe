@@ -2,7 +2,7 @@ import groq from "groq";
 import client from "../client";
 import Layout from "./components/Layout";
 import Event from "./components/Event";
-import EventForm from "./components/Forms/eventForm";
+import EventForm from "./components/EventForm";
 
 const EventPage = (props) => {
   return (

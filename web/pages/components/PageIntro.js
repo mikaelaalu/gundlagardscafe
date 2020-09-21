@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const textWrapper = styled.div`
+const TextWrapper = styled.div`
   width: 90%;
 
   @media (min-width: 768px) {
@@ -13,4 +13,8 @@ const textWrapper = styled.div`
   }
 `;
 
-export default { textWrapper };
+const PageIntro = (props) => {
+  return <TextWrapper>{props.children}</TextWrapper>;
+};
+
+export default PageIntro;

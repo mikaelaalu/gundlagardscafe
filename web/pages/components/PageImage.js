@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const imageWrapper = styled.div`
+const ImageWrapper = styled.div`
   width: 100vw;
   height: 100vw;
 
@@ -23,4 +23,12 @@ const imageWrapper = styled.div`
   }
 `;
 
-export default { imageWrapper };
+const PageImage = (props) => {
+  return (
+    <ImageWrapper>
+      <img src={props.src} alt={props.alt} />
+    </ImageWrapper>
+  );
+};
+
+export default PageImage;

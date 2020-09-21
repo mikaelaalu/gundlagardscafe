@@ -1,3 +1,5 @@
+import styled from "styled-components";
+import { useState } from "react";
 import imageUrlBuilder from "./../../imageUrlBuilder";
 import PortableText from "@sanity/block-content-to-react";
 import PageIcon from "./PageIcon";
@@ -5,9 +7,6 @@ import PageTitle from "./PageTitle";
 import PageIntro from "./PageIntro";
 import EventText from "./EventText";
 import SingleEvent from "./EventSingle";
-import { useState } from "react";
-
-import styled from "styled-components";
 
 const EventSection = styled.section`
   width: 100vw;

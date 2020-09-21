@@ -32,7 +32,7 @@ const Catering = ({ catering, icon }) => {
         <div className="iconAndTitleContainer">
           <div className="iconAndTitleWrapper">
             <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} />
-            <PageTitle title={catering.titleCatering} />
+            <PageTitle title={catering.titleCatering} /> 
           </div>
         </div>
 

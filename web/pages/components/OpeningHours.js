@@ -2,6 +2,30 @@ import styled from "styled-components";
 import imageUrlBuilder from "./../../imageUrlBuilder";
 import PageTitle from "./PageTitle";
 
+const OpeningHoursSection = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const IconWrapper = styled.div`
+  width: 60px;
+  height: auto;
+  background-color: var(--light-black);
+
+  @media (min-width: 768px) {
+    width: 90px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+`;
+
 const Box = styled.div`
   width: 100%;
   display: flex;
@@ -10,24 +34,26 @@ const Box = styled.div`
 
   h2 {
     margin-top: 10px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+    }
   }
 `;
 
 const TimeBox = styled.div`
   display: flex;
-  width: 40%;
   justify-content: space-between;
   margin-top: 20px;
-`;
 
-const Icon = styled.img`
-  width: 60px;
-  height: 50px;
+  p:first-child {
+    margin-right: 48px;
+  }
 `;
 
 const InfoText = styled.p`
+  font-size: 14px;
   margin-top: 34px;
-  padding-bottom: 85px;
 `;
 
 const OpeningHours = ({ props, icon }) => {
@@ -35,8 +61,11 @@ const OpeningHours = ({ props, icon }) => {
   const iconAlt = icon.iconAlt;
 
   return (
-    <div className="textContent">
-      <Icon src={imageUrlBuilder(iconSrc)} alt={iconAlt} />
+    <OpeningHoursSection>
+      <IconWrapper>
+        <img src={imageUrlBuilder(iconSrc)} alt={iconAlt} />
+      </IconWrapper>
+
       <Box>
         <PageTitle title={props.titleOpening} />
         <TimeBox>
@@ -70,7 +99,7 @@ const OpeningHours = ({ props, icon }) => {
 
         <InfoText>{props.infoOpening}</InfoText>
       </Box>
-    </div>
+    </OpeningHoursSection>
   );
 };
 
