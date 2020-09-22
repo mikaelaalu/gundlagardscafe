@@ -1,6 +1,6 @@
 import groq from "groq";
 import client from "../client";
-import Layout from "./components/Layout";
+import Layout from "./components/LayOut";
 import About from "./components/About";
 
 const AboutPage = (props) => {
