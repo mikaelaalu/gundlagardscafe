@@ -9,17 +9,12 @@ const ImageWrapper = styled.div`
     max-width: 700px;
     min-width: 400px;
     height: auto;
-    border-radius: 100px;
   }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-
-    @media (min-width: 768px) {
-      border-radius: 100px;
-    }
   }
 `;
 
