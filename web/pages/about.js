@@ -18,10 +18,12 @@ const query = groq`{
   "icon": (*[_type == 'icon']),
 }`;
 
-AboutPage.getInitialProps = async function () {
-  const res = await client.fetch(query);
+export async function getStaticProps() {
+  const props = await client.fetch(query);
 
-  return res;
-};
+  return {
+    props: props,
+  };
+}
 
 export default AboutPage;

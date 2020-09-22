@@ -1,7 +1,7 @@
 import groq from "groq";
 import client from "../client";
 import OpeningHours from "./components/OpeningHours";
-import Layout from "./components/Layout"; 
+import Layout from "./components/Layout";
 
 const OpeningHoursPage = (props) => {
   return (
@@ -21,10 +21,12 @@ const query = groq`{
   "icon": (*[_type == 'icon']),
 }`;
 
-OpeningHoursPage.getInitialProps = async function () {
-  const res = await client.fetch(query);
+export async function getStaticProps() {
+  const props = await client.fetch(query);
 
-  return res;
-};
+  return {
+    props: props,
+  };
+}
 
 export default OpeningHoursPage;

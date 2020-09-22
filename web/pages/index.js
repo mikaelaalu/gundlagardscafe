@@ -4,13 +4,15 @@ import Layout from "./components/Layout";
 import StartPage from "./components/StartPage";
 
 const Index = (props) => {
+  console.log(props);
   return (
-    <Layout props={props[0]}>
-      <StartPage props={props[0].navigation[0]} icon={props[0].icon[0]} />
+    <Layout props={props}>
+      <StartPage props={props.navigation[0]} icon={props.icon[0]} />
+
       {/* <InstagramFeed
-        props={props[1]}
-        title={props[0].navigation[0].instagram}
-      /> */}
+    //     props={props[1]}
+    //     title={props[0].navigation[0].instagram}
+    //   /> */}
     </Layout>
   );
 };
@@ -25,11 +27,12 @@ const query = groq`{
   "icon": (*[_type == 'icon']),
 }`;
 
-Index.getInitialProps = async function () {
-  const res = await client.fetch(query);
+export async function getStaticProps() {
+  const props = await client.fetch(query);
 
-  const data = [res];
-  return data;
-};
+  return {
+    props: props,
+  };
+}
 
 export default Index;

@@ -7,7 +7,7 @@ const FindUsPage = (props) => {
   return (
     <Layout props={props}>
       <FindUs findUs={props.findUs[0]} icon={props.icon[0]} />
-    </Layout> 
+    </Layout>
   );
 };
 
@@ -18,10 +18,11 @@ const query = groq`{
     "icon": (*[_type == 'icon']),
   }`;
 
-FindUsPage.getInitialProps = async function () {
-  const res = await client.fetch(query);
+export async function getStaticProps() {
+  const props = await client.fetch(query);
 
-  return res;
-};
-
+  return {
+    props: props,
+  };
+}
 export default FindUsPage;
