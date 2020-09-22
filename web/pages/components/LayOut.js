@@ -2,16 +2,6 @@ import Footer from "./Footer";
 import NavBar from "./NavBar";
 import styled from "styled-components";
 
-const Wrapper = styled.section`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: 103px;
-  background-color: var(--dipp-beige);
-  position: sticky;
-  top: 0;
-`;
-
 const LayoutSection = styled.section`
   width: 100vw;
   margin: 0;
