@@ -1,7 +1,7 @@
 import groq from "groq";
 import client from "../client";
-import FindUs from "./components/FindUs";
-import Layout from "./components/Layout";
+import FindUs from "../components/FindUs";
+import Layout from "../components/Layout";
 
 const FindUsPage = (props) => {
   return (

@@ -1,7 +1,7 @@
 import groq from "groq";
 import client from "../client";
-import Menu from "./components/Menu";
-import Layout from "./components/Layout";
+import Menu from "../components/Menu";
+import Layout from "../components/Layout";
 
 const MenuPage = (props) => {
   return (

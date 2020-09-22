@@ -1,10 +1,10 @@
 import groq from "groq";
 import client from "../client";
-import Layout from "./components/Layout";
-import StartPage from "./components/StartPage";
+import Layout from "../components/Layout";
+import StartPage from "../components/StartPage";
 
 const Index = (props) => {
-  console.log(props);
+  console.log({ props });
   return (
     <Layout props={props}>
       <StartPage props={props.navigation[0]} icon={props.icon[0]} />

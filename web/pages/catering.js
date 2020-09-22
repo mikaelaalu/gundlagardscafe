@@ -1,8 +1,8 @@
 import groq from "groq";
 import client from "../client";
-import Layout from "./components/Layout";
-import Catering from "./components/Catering";
-import CateringForm from "./components/CateringForm";
+import Layout from "../components/Layout";
+import Catering from "../components/Catering";
+import CateringForm from "../components/CateringForm";
 
 const CateringPage = (props) => {
   return (

@@ -1,7 +1,7 @@
 import groq from "groq";
 import client from "../client";
-import Layout from "./components/Layout";
-import About from "./components/About";
+import Layout from "../components/Layout";
+import About from "../components/About";
 
 const AboutPage = (props) => {
   return (
@@ -11,14 +11,13 @@ const AboutPage = (props) => {
   );
 };
 
-const query = groq`{
-  "footer": (*[_type == 'footer']),
-  "about": (*[_type == 'about']),
-  "navigation": (*[_type== 'navigation']),
-  "icon": (*[_type == 'icon']),
-}`;
-
 export async function getStaticProps() {
+  const query = groq`{
+    "footer": (*[_type == 'footer']),
+    "about": (*[_type == 'about']),
+    "navigation": (*[_type== 'navigation']),
+    "icon": (*[_type == 'icon']),
+  }`;
   const props = await client.fetch(query);
 
   return {
