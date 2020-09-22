@@ -55,6 +55,9 @@ const InfoText = styled.p`
   font-size: 14px;
   margin-top: 34px;
   margin-bottom: 85px;
+  @media (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 `;
 
 const OpeningHours = ({ props, icon }) => {
