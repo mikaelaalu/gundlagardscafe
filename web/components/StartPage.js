@@ -22,7 +22,6 @@ const IconMobile = styled.img`
 const FlexTitle = styled.div`
   display: flex;
   align-items: center;
-  width: 70%;
 `;
 
 const BigIconDesktop = styled.img`
@@ -46,6 +45,8 @@ const Title = styled.h1`
     margin-bottom: 0px;
     margin-top: 0px;
     font-size: 60px;
+    width: 405px;
+    margin: 0 20px;
   }
 `;
 
