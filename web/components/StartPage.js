@@ -58,6 +58,7 @@ const Wrapper = styled.div`
 
   @media (min-width: 768px) {
     margin-top: 80px;
+    width: 100vw;
   }
 `;
 
@@ -69,12 +70,19 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(${(p) => p.img});
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(${(p) => p.img});
   background-size: cover;
+  background-position: center;
 
   @media (min-width: 768px) {
-    width: 207px;
-    height: 337px;
+    width: 15vw;
+    height: 25vw;
+    flex-direction: column;
   }
 `;
 
@@ -104,11 +112,24 @@ const SmallIconDesktop = styled.div`
   }
 `;
 
+const ArrowIconDesktop = styled.img`
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    width: 5vw;
+    height: auto;
+    margin-top: 5px;
+  }
+`;
+
 const StartPage = ({ props, icon }) => {
   const iconTreeSrc = icon.iconArray[0].iconImage.asset._ref;
   const iconTreeAlt = icon.iconArray[0].iconAlt;
   const iconFire = icon.iconArray[12].iconImage.asset._ref;
   const iconFireAlt = icon.iconArray[12].iconAlt;
+
+  const iconArrow = icon.iconArray[13].iconImage.asset._ref;
+  const iconArrowAlt = icon.iconArray[13].iconAlt;
 
   return (
     <StartPageSection>
@@ -128,31 +149,55 @@ const StartPage = ({ props, icon }) => {
         <Link href="/openingHours">
           <Box img={imageUrlBuilder(props.imageOpeningHours.asset._ref)}>
             <A>{props.openingHours}</A>
+            <ArrowIconDesktop
+              src={imageUrlBuilder(iconArrow)}
+              alt={iconArrowAlt}
+            />
           </Box>
         </Link>
         <Link href="/findUs">
           <Box img={imageUrlBuilder(props.imageFindUs.asset._ref)}>
             <A>{props.findUs}</A>
+            <ArrowIconDesktop
+              src={imageUrlBuilder(iconArrow)}
+              alt={iconArrowAlt}
+            />
           </Box>
         </Link>
         <Link href="/about">
           <Box img={imageUrlBuilder(props.imageAbout.asset._ref)}>
             <A>{props.about}</A>
+            <ArrowIconDesktop
+              src={imageUrlBuilder(iconArrow)}
+              alt={iconArrowAlt}
+            />
           </Box>
         </Link>
         <Link href="/event">
           <Box img={imageUrlBuilder(props.imageEvent.asset._ref)}>
             <A>{props.event}</A>
+            <ArrowIconDesktop
+              src={imageUrlBuilder(iconArrow)}
+              alt={iconArrowAlt}
+            />
           </Box>
         </Link>
         <Link href="/catering">
           <Box img={imageUrlBuilder(props.imageCatering.asset._ref)}>
             <A>{props.catering}</A>
+            <ArrowIconDesktop
+              src={imageUrlBuilder(iconArrow)}
+              alt={iconArrowAlt}
+            />
           </Box>
         </Link>
         <Link href="/menu">
           <Box img={imageUrlBuilder(props.imageMeny.asset._ref)}>
             <A>{props.menu}</A>
+            <ArrowIconDesktop
+              src={imageUrlBuilder(iconArrow)}
+              alt={iconArrowAlt}
+            />
           </Box>
         </Link>
       </Wrapper>
