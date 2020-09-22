@@ -3,6 +3,17 @@ import styled from "styled-components";
 
 const TextWrapper = styled.div`
   width: 90%;
+
+  h3 {
+    @media (min-width: 768px) {
+      margin: 0px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 50%;
+    padding: 0 20px 20px 10px;
+  }
 `;
 
 const EventText = ({ event }) => {

@@ -6,7 +6,7 @@ const IconWrapper = styled.div`
   background-color: var(--light-black);
 
   @media (min-width: 768px) {
-    width: 90px;
+    width: 80px;
   }
 
   img {
