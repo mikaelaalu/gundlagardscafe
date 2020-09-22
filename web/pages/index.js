@@ -2,16 +2,15 @@ import groq from "groq";
 import client from "../client";
 import Layout from "./components/Layout";
 import StartPage from "./components/StartPage";
-import InstagramFeed from "./components/InstagramFeed";
 
 const Index = (props) => {
   return (
     <Layout props={props[0]}>
       <StartPage props={props[0].navigation[0]} icon={props[0].icon[0]} />
-      <InstagramFeed
+      {/* <InstagramFeed
         props={props[1]}
         title={props[0].navigation[0].instagram}
-      />
+      /> */}
     </Layout>
   );
 };
@@ -28,13 +27,8 @@ const query = groq`{
 
 Index.getInitialProps = async function () {
   const res = await client.fetch(query);
-  const instagram = await fetch(
-    "https://www.instagram.com/gundlagardscafe/?__a=1"
-  );
 
-  const json = await instagram.json();
-
-  const data = [res, json];
+  const data = [res];
   return data;
 };
 
