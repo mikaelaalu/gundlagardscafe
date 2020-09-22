@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 import Burger from "./Burger";
-import imageUrlBuilder from "./../../imageUrlBuilder";
+import imageUrlBuilder from "../imageUrlBuilder";
 
 const Nav = styled.nav`
   width: 100%;

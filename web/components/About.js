@@ -1,5 +1,6 @@
 import PortableText from "@sanity/block-content-to-react";
-import imageUrlBuilder from "./../../imageUrlBuilder";
+import imageUrlBuilder from "../imageUrlBuilder";
+
 import PageIcon from "./PageIcon";
 import PageTitle from "./PageTitle";
 import PageIntro from "./PageIntro";

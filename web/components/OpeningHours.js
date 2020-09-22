@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imageUrlBuilder from "./../../imageUrlBuilder";
+import imageUrlBuilder from "../imageUrlBuilder";
 import PageTitle from "./PageTitle";
 
 const OpeningHoursSection = styled.section`

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-import imageUrlBuilder from "./../../imageUrlBuilder";
+import imageUrlBuilder from "../imageUrlBuilder";
 import PortableText from "@sanity/block-content-to-react";
 import PageIcon from "./PageIcon";
 import PageTitle from "./PageTitle";

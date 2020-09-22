@@ -1,5 +1,5 @@
 import PortableText from "@sanity/block-content-to-react";
-import imageUrlBuilder from "./../../imageUrlBuilder";
+import imageUrlBuilder from "../imageUrlBuilder";
 import PageIcon from "./PageIcon";
 import PageTitle from "./PageTitle";
 import styled from "styled-components";
@@ -32,7 +32,7 @@ const Catering = ({ catering, icon }) => {
         <div className="iconAndTitleContainer">
           <div className="iconAndTitleWrapper">
             <PageIcon src={imageUrlBuilder(IconSrc)} alt={IconAlt} />
-            <PageTitle title={catering.titleCatering} /> 
+            <PageTitle title={catering.titleCatering} />
           </div>
         </div>
 
