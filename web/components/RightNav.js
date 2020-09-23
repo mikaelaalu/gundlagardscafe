@@ -86,8 +86,8 @@ const CrossTwo = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 78px;
-  height: 121px;
+  width: auto;
+  height: 180px;
 `;
 
 const LogoDesktop = styled.a`
@@ -95,7 +95,7 @@ const LogoDesktop = styled.a`
 
   @media (min-width: 768px) {
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 `;
 
