@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import imageUrlBuilder from "../imageUrlBuilder";
 
 const Title = styled.h3`
   color: black;

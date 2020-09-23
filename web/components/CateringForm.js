@@ -9,22 +9,6 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const BookEventDiv = styled.div`
-  width: 90%;
-
-  p:nth-child(2) {
-    margin-top: 24px;
-  }
-
-  p:last-child {
-    margin-bottom: 24px;
-  }
-
-  @media (min-width: 768px) {
-    width: 45%;
-  }
-`;
-
 const Form = styled.form`
   width: 90%;
 
