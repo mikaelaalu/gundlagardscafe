@@ -99,6 +99,14 @@ const LogoDesktop = styled.a`
   }
 `;
 
+const LastSection = styled.section`
+  margin-bottom: 200px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+`;
+
 const RightNav = ({ props, open, setOpen, logoDesktop }) => {
   const iconSrc = logoDesktop.iconImage.asset._ref;
   const iconAlt = logoDesktop.iconAlt;
@@ -143,9 +151,9 @@ const RightNav = ({ props, open, setOpen, logoDesktop }) => {
         </section>
       </Link>
       <Link href="/menu">
-        <section>
+        <LastSection>
           <a>{props.menu}</a>
-        </section>
+        </LastSection>
       </Link>
     </MenuList>
   );
