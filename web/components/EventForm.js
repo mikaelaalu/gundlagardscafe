@@ -45,7 +45,7 @@ const Input = styled.input`
 const SmallInput = styled.input`
   width: 50%;
   height: 50px;
-  border: none;
+
   border: 0.25px solid #0b3546;
   ::placeholder {
     padding-left: 10px;
