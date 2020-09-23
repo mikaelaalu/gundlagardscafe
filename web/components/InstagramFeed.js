@@ -1,21 +1,27 @@
 import styled from "styled-components";
+import imageUrlBuilder from "../imageUrlBuilder";
+
 const Title = styled.h3`
-  padding-left: 21px;
+  color: black;
+  margin-top: 0px;
   @media (min-width: 768px) {
-    padding-left: 5px;
-    width: 70vw;
+    width: 34vw;
+    margin-top: 0px;
   }
 `;
 
 const ImgWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100vw;
-  padding-bottom: 85px;
-  padding-top: 24px;
+  padding-bottom: 40px;
+  padding-top: 8px;
+  background-color: white;
+
   @media (min-width: 768px) {
     align-items: center;
     justify-content: center;
-    width: 70vw;
+    width: 40vw;
   }
 `;
 
@@ -26,8 +32,7 @@ const Img = styled.img`
 `;
 
 const Container = styled.div`
-  width: 100%;
-  height: 100%;
+  flex: 30%;
 `;
 
 const InstaSection = styled.section`
@@ -39,19 +44,40 @@ const InstaSection = styled.section`
   }
 `;
 
-const InstagramFeed = ({ props, title }) => {
-  const fourImages = props.slice(0, 4);
+const ProfilePic = styled.img`
+  border-radius: 50%;
+  width: 40px;
+  margin: 0 10px;
+`;
 
+const Flex = styled.div`
+  display: flex;
+  height: 60px;
+  align-items: center;
+`;
+
+const ImageContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const InstagramFeed = ({ props, username, profilePic, title }) => {
+  const fourImages = props.slice(0, 6);
+  console.log(profilePic);
   return (
     <InstaSection>
-      <Title>{title}</Title>
-
       <ImgWrapper>
-        {fourImages.map((image, i) => (
-          <Container key={i}>
-            <Img src={image.node.display_url} key={i} />
-          </Container>
-        ))}
+        <Flex>
+          <ProfilePic src={profilePic} />
+          <Title>{username}</Title>
+        </Flex>
+        <ImageContainer>
+          {fourImages.map((image, i) => (
+            <Container key={i}>
+              <Img src={image.node.display_url} key={i} />
+            </Container>
+          ))}
+        </ImageContainer>
       </ImgWrapper>
     </InstaSection>
   );

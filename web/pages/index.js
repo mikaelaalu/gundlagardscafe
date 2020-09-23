@@ -15,14 +15,22 @@ const Index = (props) => {
   }, [0]);
 
   let imageArray = [];
+  let username = "";
+  let profilePic = "";
   if (instaData) {
     imageArray = instaData.graphql.user.edge_owner_to_timeline_media.edges;
+    username = instaData.graphql.user.username;
+    profilePic = instaData.graphql.user.profile_pic_url;
   }
 
   return (
     <Layout props={props}>
       <StartPage props={props.navigation[0]} icon={props.icon[0]} />
-      <InstagramFeed props={imageArray} title={props.navigation[0].instagram} />
+      <InstagramFeed
+        props={imageArray}
+        username={username}
+        profilePic={profilePic}
+      />
     </Layout>
   );
 };
