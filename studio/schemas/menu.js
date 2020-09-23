@@ -16,6 +16,7 @@ export default {
       of: [
         {
           type: "block",
+          styles: [{ title: "Text", value: "normal" }],
         },
       ],
     },
