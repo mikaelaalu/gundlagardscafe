@@ -83,6 +83,7 @@ const Box = styled.div`
     width: 15vw;
     height: 25vw;
     flex-direction: column;
+    cursor: pointer;
   }
 `;
 

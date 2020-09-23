@@ -9,7 +9,6 @@ import schedule from "./objects/schedule";
 import dayAndTime from "./objects/dayAndTime";
 import hours from "./objects/hours";
 import icons from "./objects/iconObject";
-import imageArray from "./objects/imageArray";
 
 // Document types
 import menu from "./menu";
@@ -37,7 +36,6 @@ export default createSchema({
     dayAndTime,
     hours,
     icons,
-    imageArray,
 
     /* Your types here! */
     navigation,

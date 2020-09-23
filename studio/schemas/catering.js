@@ -12,7 +12,7 @@ export default {
       title: "Info om bokning av catering/event",
       name: "cateringInfo",
       type: "array",
-      of: [{ type: "block" }],
+      of: [{ type: "block", styles: [{ title: "Text", value: "normal" }] }],
     },
   ],
 };

@@ -123,21 +123,6 @@ const EventsWrapper = styled.div`
   }
 `;
 
-const Test = styled.div`
-  width: 90%;
-
-  h3 {
-    @media (min-width: 768px) {
-      margin: 0px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    width: 50%;
-    padding: 0 20px 20px 10px;
-  }
-`;
-
 const Event = ({ eventInformation, event, icon }) => {
   const IconSrc = icon.iconArray[12].iconImage.asset._ref;
   const IconAlt = icon.iconArray[12].iconAlt;
@@ -176,31 +161,6 @@ const Event = ({ eventInformation, event, icon }) => {
             {events.map((event, key) => (
               <EventText event={event} key={key} />
             ))}
-            <Test>
-              {" "}
-              <h3>Test</h3>
-              <p>
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. It has survived
-                not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged.
-              </p>
-            </Test>
-            <Test>
-              {" "}
-              <h3>Test</h3>
-              <p>
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. It has survived
-                not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised
-                in the 1960s with the release of Letraset sheets containing
-                Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum
-              </p>
-            </Test>
           </EventTextWrapper>
         </About>
       </TextWrapper>
