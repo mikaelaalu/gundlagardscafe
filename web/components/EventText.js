@@ -12,7 +12,7 @@ const TextWrapper = styled.div`
 
   @media (min-width: 768px) {
     width: 50%;
-    padding: 0 20px 20px 10px;
+    padding: 0 20px 20px 20px;
   }
 `;
 

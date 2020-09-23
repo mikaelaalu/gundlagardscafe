@@ -45,9 +45,14 @@ const TimeBox = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  width: 150px;
 
   p:first-child {
-    margin-right: 48px;
+    text-align: left;
+  }
+
+  p:nth-child(2) {
+    text-align: right;
   }
 `;
 

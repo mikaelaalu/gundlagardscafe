@@ -18,15 +18,18 @@ const Box = styled.div`
   @media (min-width: 768px) {
     width: 50%;
     align-items: center;
-    /* justify-content: center; */
   }
-  /* margin-bottom: 40px; */
+
+  h3 {
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+  }
 `;
 
 const FooterWrapper = styled.footer`
   color: white;
   background-color: var(--secondary-mud);
-  /* height: 580px; */
   display: flex;
   flex-direction: column;
   padding: 30px 24px 80px 24px;
@@ -48,6 +51,7 @@ const Logo = styled.img`
   @media (min-width: 768px) {
     width: auto;
     height: 200px;
+    margin: auto 0;
   }
 `;
 
@@ -65,27 +69,38 @@ const Flex = styled.div`
 
 const IconWrapper = styled.div`
   @media (min-width: 768px) {
-    /* flex: 1; */
     width: 33%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
   }
 `;
 
 const TextWrapper = styled.div`
   @media (min-width: 768px) {
     display: flex;
-    /* justify-content: space-evenly; */
-    align-items: center;
-    justify-content: center;
-    width: 67%;
+    width: 66%;
+    height: 100%;
+    min-height: 308px;
   }
 `;
 
-const Height = styled.div`
+const Container = styled.div`
   @media (min-width: 768px) {
-    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin: auto 0;
+  }
+`;
+
+const LeftAlign = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
@@ -110,37 +125,39 @@ const Footer = ({ props, icons }) => {
       </IconWrapper>
 
       <TextWrapper>
-        <Box>
-          <Height>
-            <Title>{props.follow}</Title>
-            <Flex>
-              <Icon src={imageUrlBuilder(facebookSrc)} alt={facebookAlt} />
-              <Link href={props.facebookLink}>{props.facebook}</Link>
-            </Flex>
-            <Flex>
-              <Icon src={imageUrlBuilder(instagramSrc)} alt={instagramAlt} />
-              <Link href={props.instagramLink}>{props.instagram}</Link>
-            </Flex>
-          </Height>
-        </Box>
+        <Container>
+          <Box>
+            <LeftAlign>
+              <Title>{props.follow}</Title>
+              <Flex>
+                <Icon src={imageUrlBuilder(facebookSrc)} alt={facebookAlt} />
+                <Link href={props.facebookLink}>{props.facebook}</Link>
+              </Flex>
+              <Flex>
+                <Icon src={imageUrlBuilder(instagramSrc)} alt={instagramAlt} />
+                <Link href={props.instagramLink}>{props.instagram}</Link>
+              </Flex>
+            </LeftAlign>
+          </Box>
 
-        <Box>
-          <Height>
-            <Title>{props.contact}</Title>
-            <Flex>
-              <Icon src={imageUrlBuilder(mailSrc)} alt={mailAlt} />
-              <p>{props.mail}</p>
-            </Flex>
-            <Flex>
-              <Icon src={imageUrlBuilder(numberSrc)} alt={numberAlt} />
-              <p>{props.number}</p>
-            </Flex>
-            <Flex>
-              <Icon src={imageUrlBuilder(addressSrc)} alt={addressAlt} />
-              <p>{props.address}</p>
-            </Flex>
-          </Height>
-        </Box>
+          <Box>
+            <LeftAlign>
+              <Title>{props.contact}</Title>
+              <Flex>
+                <Icon src={imageUrlBuilder(mailSrc)} alt={mailAlt} />
+                <p>{props.mail}</p>
+              </Flex>
+              <Flex>
+                <Icon src={imageUrlBuilder(numberSrc)} alt={numberAlt} />
+                <p>{props.number}</p>
+              </Flex>
+              <Flex>
+                <Icon src={imageUrlBuilder(addressSrc)} alt={addressAlt} />
+                <p>{props.address}</p>
+              </Flex>
+            </LeftAlign>
+          </Box>
+        </Container>
       </TextWrapper>
     </FooterWrapper>
   );

@@ -67,16 +67,16 @@ const ReadMore = styled.div`
   align-items: center;
   cursor: pointer;
 
+  @media (min-width: 768px) {
+    display: none;
+  }
+
   button {
     all: unset;
     color: var(--white);
     font-size: 18px;
     text-decoration: underline;
     margin-right: 8px;
-
-    @media (min-width: 768px) {
-      display: none;
-    }
   }
 
   div {
