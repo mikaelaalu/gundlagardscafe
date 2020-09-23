@@ -155,7 +155,7 @@ const Event = ({ eventInformation, event, icon }) => {
         <About>
           <ReadMore onClick={onC}>
             <button>Läs mer</button>
-            <div expanded={expanded}></div>
+            <div></div>
           </ReadMore>
 
           <EventTextWrapper expanded={expanded}>
