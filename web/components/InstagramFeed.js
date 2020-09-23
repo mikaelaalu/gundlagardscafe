@@ -61,7 +61,7 @@ const ImageContainer = styled.div`
   flex-wrap: wrap;
 `;
 
-const InstagramFeed = ({ props, username, profilePic, title }) => {
+const InstagramFeed = ({ props, username, profilePic }) => {
   const fourImages = props.slice(0, 6);
   console.log(profilePic);
   return (
@@ -69,7 +69,9 @@ const InstagramFeed = ({ props, username, profilePic, title }) => {
       <ImgWrapper>
         <Flex>
           <ProfilePic src={profilePic} />
-          <Title>{username}</Title>
+          <a href={"https://www.instagram.com/gundlagardscafe"}>
+            <Title>{username}</Title>
+          </a>
         </Flex>
         <ImageContainer>
           {fourImages.map((image, i) => (
