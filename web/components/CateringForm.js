@@ -21,6 +21,9 @@ const Input = styled.input`
   width: 100%;
   height: 50px;
   border: 0.25px solid #0b3546;
+  ::placeholder {
+    padding-left: 10px;
+  }
 `;
 
 const SmallInput = styled.input`
@@ -28,6 +31,9 @@ const SmallInput = styled.input`
   height: 50px;
   border: none;
   border: 0.25px solid #0b3546;
+  ::placeholder {
+    padding-left: 10px;
+  }
 `;
 
 const Button = styled.button`
