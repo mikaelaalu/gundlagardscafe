@@ -56,7 +56,6 @@ const About = styled.div`
   @media (min-width: 768px) {
     flex: 0.95;
     margin-top: 153px;
-    /** 215/173px if no oadding on EventTextWrapper */
   }
 `;
 

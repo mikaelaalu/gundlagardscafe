@@ -21,6 +21,7 @@ const Input = styled.input`
   width: 100%;
   height: 50px;
   border: 0.2px solid #0b3546;
+
   ::placeholder {
     padding-left: 10px;
   }
@@ -30,6 +31,7 @@ const SmallInput = styled.input`
   width: 50%;
   height: 50px;
   border: 0.2px solid #0b3546;
+
   ::placeholder {
     padding-left: 10px;
   }
@@ -139,7 +141,6 @@ const CateringEventForm = () => {
         />
 
         <input type="file" name="upload" />
-
         {status === "SUCCESS" ? <p>Skickat!</p> : <Button>Skicka</Button>}
         {status === "ERROR" && <p>Något gick fel, försökt igen!</p>}
       </Form>

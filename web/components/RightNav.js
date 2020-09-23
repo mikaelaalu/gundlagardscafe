@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Link from "next/link";
 import imageUrlBuilder from "../imageUrlBuilder";
 
-//Fix hamburger menu styling in here, in @media
 const MenuList = styled.ul`
   display: flex;
   align-items: center;
