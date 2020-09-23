@@ -22,11 +22,47 @@ const DateTimeWrapper = styled.div`
 `;
 
 const SingleEvent = ({ event }) => {
+  // console.log("eventsingle:");
+  let separate;
+  let day;
+  const dates = event.eventDate;
+  // console.log("dates:");
+  // console.log(dates);
+
+  dates.forEach((date) => {
+    separate = date.split("T");
+    // day = separate[0];
+  });
+  // console.log("separate:");
+  // console.log(separate);
+  // console.log("day:");
+  // console.log(day);
+
+  // const split = dates.forEach((date) => {
+  //   const separate = date.split("T");
+  //   console.log(separate);
+
+  //   // const day = separate[0];
+  //   // const time = separate[1];
+  //   // console.log(day);
+  //   // console.log(time);
+  //   // return day;
+  // });
+
+  // console.log(split);
+
   return (
     <SingleEventWrapper>
       <h3>{event.title}</h3>
 
-      <DateTimeWrapper>
+      {dates.map((date, key) => (
+        <DateTimeWrapper key={key}>
+          <p>{date}</p>
+          <p>tid</p>
+        </DateTimeWrapper>
+      ))}
+
+      {/* <DateTimeWrapper>
         <p>datum</p>
         <p>tid</p>
       </DateTimeWrapper>
@@ -37,7 +73,7 @@ const SingleEvent = ({ event }) => {
       <DateTimeWrapper>
         <p>datum</p>
         <p>tid</p>
-      </DateTimeWrapper>
+      </DateTimeWrapper> */}
     </SingleEventWrapper>
   );
 };

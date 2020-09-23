@@ -11,6 +11,7 @@ const Nav = styled.nav`
   top: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 `;
 
 const Logo = styled.div`
