@@ -8,13 +8,14 @@ const ImageWrapper = styled.div`
     flex: 1;
     max-width: 700px;
     min-width: 400px;
-    height: auto;
+    max-height: 560px;
   }
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
 `;
 

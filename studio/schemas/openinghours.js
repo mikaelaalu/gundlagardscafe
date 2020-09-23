@@ -17,7 +17,8 @@ export default {
     {
       name: "openMonday",
       type: "string",
-      title: "Öppet",
+      title: "Öppettider",
+      description: "Format HH - HH, tex 10 - 17",
     },
     {
       name: "tuesday",
@@ -27,7 +28,8 @@ export default {
     {
       name: "openTuesday",
       type: "string",
-      title: "Öppet",
+      title: "Öppettider",
+      description: "Format HH - HH, tex 10 - 17",
     },
     {
       name: "wednesday",
@@ -37,7 +39,8 @@ export default {
     {
       name: "openWednesday",
       type: "string",
-      title: "Öppet",
+      title: "Öppettider",
+      description: "Format HH - HH, tex 10 - 17",
     },
     {
       name: "thursday",
@@ -47,7 +50,8 @@ export default {
     {
       name: "openThursday",
       type: "string",
-      title: "Öppet",
+      title: "Öppettider",
+      description: "Format HH - HH, tex 10 - 17",
     },
     {
       name: "friday",
@@ -57,7 +61,8 @@ export default {
     {
       name: "openFriday",
       type: "string",
-      title: "Öppet",
+      title: "Öppettider",
+      description: "Format HH - HH, tex 10 - 17",
     },
     {
       name: "saturday",
@@ -67,7 +72,8 @@ export default {
     {
       name: "openSaturday",
       type: "string",
-      title: "Öppet",
+      title: "Öppettider",
+      description: "Format HH - HH, tex 10 - 17",
     },
     {
       name: "sunday",
@@ -77,7 +83,8 @@ export default {
     {
       name: "openSunday",
       type: "string",
-      title: "Öppet",
+      title: "Öppettider",
+      description: "Format HH - HH, tex 10 - 17",
     },
 
     {
