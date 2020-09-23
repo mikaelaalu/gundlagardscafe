@@ -38,17 +38,5 @@ export default {
         },
       ],
     },
-    // {
-    //   title: "Datum",
-    //   name: "eventDate",
-    //   type: "array",
-    //   of: [
-    //     {
-    //       title: "Lägg till datum",
-    //       name: "timeSpan",
-    //       type: "duration",
-    //     },
-    //   ],
-    // },
   ],
 };
