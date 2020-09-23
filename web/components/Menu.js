@@ -26,7 +26,6 @@ const MenuTextWrapper = styled.div`
   align-items: center;
 
   @media (min-width: 768px) {
-    /* width: 50%; */
     flex: 1;
     max-width: 400px;
     margin-right: 80px;

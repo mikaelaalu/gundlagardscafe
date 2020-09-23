@@ -39,7 +39,6 @@ const SmallInput = styled.input`
 
 const Button = styled.button`
   margin-top: 15px;
-  margin-bottom: 100px;
   width: 100%;
   background-color: var(--baked-orange);
   height: 55px;

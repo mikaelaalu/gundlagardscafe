@@ -128,7 +128,6 @@ const StartPage = ({ props, icon }) => {
   const iconTreeAlt = icon.iconArray[0].iconAlt;
   const iconFire = icon.iconArray[12].iconImage.asset._ref;
   const iconFireAlt = icon.iconArray[12].iconAlt;
-
   const iconArrow = icon.iconArray[13].iconImage.asset._ref;
   const iconArrowAlt = icon.iconArray[13].iconAlt;
 

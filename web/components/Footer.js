@@ -33,6 +33,7 @@ const FooterWrapper = styled.footer`
   display: flex;
   flex-direction: column;
   padding: 30px 24px 80px 24px;
+  margin-top: 85px;
 
   @media (min-width: 768px) {
     margin-top: 200px;

@@ -69,7 +69,6 @@ const Exit = styled.div`
   }
 `;
 
-//Update styling for cross in here
 const CrossOne = styled.div`
   width: 25px;
   height: 2px;
