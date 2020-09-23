@@ -18,38 +18,30 @@ const DateTimeWrapper = styled.div`
 
   p:last-child {
     margin-bottom: 24px;
+    font-size: 16px;
   }
 `;
 
 const SingleEvent = ({ event }) => {
-  // console.log("eventsingle:");
-  let separate;
-  let day;
   const dates = event.eventDate;
-  // console.log("dates:");
-  // console.log(dates);
 
-  dates.forEach((date) => {
-    separate = date.split("T");
-    // day = separate[0];
-  });
-  // console.log("separate:");
-  // console.log(separate);
-  // console.log("day:");
-  // console.log(day);
+  const getTime = (param) => {
+    const jsonToDate = new Date(param);
+    const time = jsonToDate.toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+    return time;
+  };
 
-  // const split = dates.forEach((date) => {
-  //   const separate = date.split("T");
-  //   console.log(separate);
-
-  //   // const day = separate[0];
-  //   // const time = separate[1];
-  //   // console.log(day);
-  //   // console.log(time);
-  //   // return day;
-  // });
-
-  // console.log(split);
+  const getDate = (param) => {
+    const jsonToDate = new Date(param);
+    const date = jsonToDate.toLocaleDateString("sv-SE", {
+      month: "numeric", // "long" for string, ie september
+      day: "numeric",
+    });
+    return date;
+  };
 
   return (
     <SingleEventWrapper>
@@ -57,23 +49,10 @@ const SingleEvent = ({ event }) => {
 
       {dates.map((date, key) => (
         <DateTimeWrapper key={key}>
-          <p>{date}</p>
-          <p>tid</p>
+          <p>{getDate(date)}</p>
+          <p className="time">Klockan {getTime(date)}</p>
         </DateTimeWrapper>
       ))}
-
-      {/* <DateTimeWrapper>
-        <p>datum</p>
-        <p>tid</p>
-      </DateTimeWrapper>
-      <DateTimeWrapper>
-        <p>datum</p>
-        <p>tid</p>
-      </DateTimeWrapper>
-      <DateTimeWrapper>
-        <p>datum</p>
-        <p>tid</p>
-      </DateTimeWrapper> */}
     </SingleEventWrapper>
   );
 };

@@ -84,8 +84,10 @@ const ReadMore = styled.div`
     height: 10px;
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
-    transform: rotate(135deg); /* makes the arrow point down */
-    margin-bottom: 6px;
+    transform: ${({ opened }) =>
+      opened ? "rotate(-45deg)" : "rotate(135deg)"};
+    margin-bottom: ${({ opened }) => (opened ? "0px" : "6px")};
+    transition: transform ease 0.2s;
   }
 `;
 
@@ -129,10 +131,12 @@ const Event = ({ eventInformation, event, icon }) => {
   const events = event;
 
   const [expanded, isExpanded] = useState(false);
+  const [opened, isOpened] = useState(false);
 
   const onC = (e) => {
     e.preventDefault();
     isExpanded(!expanded);
+    isOpened(!opened);
   };
 
   return (
@@ -152,8 +156,8 @@ const Event = ({ eventInformation, event, icon }) => {
         </Intro>
 
         <About>
-          <ReadMore onClick={onC}>
-            <button>Läs mer</button>
+          <ReadMore onClick={onC} opened={opened}>
+            <button>{opened ? "Läs mindre" : "Läs mer"}</button>
             <div></div>
           </ReadMore>
 
