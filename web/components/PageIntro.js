@@ -7,6 +7,10 @@ const TextWrapper = styled.div`
     width: 100%;
   }
 
+  h3 {
+    font-weight: bold;
+  }
+
   /* if two <p> elements are placed after each other */
   p + p {
     margin-top: 20px;
