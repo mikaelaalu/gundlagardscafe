@@ -41,19 +41,14 @@ const Input = styled.input`
   width: 100%;
   height: 50px;
   border: 0.25px solid #0b3546;
-  ::placeholder {
-    padding-left: 10px;
-  }
+  padding-left: 10px;
 `;
 
 const SmallInput = styled.input`
   width: 50%;
   height: 50px;
-
   border: 0.25px solid #0b3546;
-  ::placeholder {
-    padding-left: 10px;
-  }
+  padding-left: 10px;
 `;
 
 const Button = styled.button`
@@ -130,7 +125,7 @@ const CateringEventForm = () => {
         <SmallInput
           type="text"
           name="date"
-          placeholder="Önskad datum"
+          placeholder="Önskat datum"
           autoComplete="off"
           required
         />
