@@ -132,6 +132,10 @@ const CateringEventForm = () => {
           autoComplete="off"
           required
         />
+        <div className="attachButtonMargins">
+          <input type="file" name="upload" id="file" />
+          <label htmlFor="file">Bifoga bilder</label>
+        </div>
 
         <input type="file" name="upload" />
         {status === "SUCCESS" ? <p>Skickat!</p> : <Button>Skicka</Button>}

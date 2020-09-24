@@ -144,11 +144,6 @@ const CateringEventForm = () => {
           required
         />
 
-        <div className="attachButtonMargins">
-          <input type="file" name="upload" id="file" />
-          <label htmlFor="file">Bifoga bilder</label>
-        </div>
-
         {status === "SUCCESS" ? <p>Skickat!</p> : <Button>Skicka</Button>}
         {status === "ERROR" && <p>Något gick fel, försökt igen!</p>}
       </Form>
