@@ -29,18 +29,18 @@ const DateTimeWrapper = styled.div`
 const SingleEvent = ({ event }) => {
   const dates = event.eventDate;
 
-  const getTime = (param) => {
-    const jsonToDate = new Date(param);
-    const time = jsonToDate.toLocaleTimeString([], {
+  const getTime = (dateString) => {
+    const stringToDate = new Date(dateString);
+    const time = stringToDate.toLocaleTimeString([], {
       hour: "2-digit",
       minute: "2-digit",
     });
     return time;
   };
 
-  const getDate = (param) => {
-    const jsonToDate = new Date(param);
-    const date = jsonToDate.toLocaleDateString("sv-SE", {
+  const getDate = (dateString) => {
+    const stringToDate = new Date(dateString);
+    const date = stringToDate.toLocaleDateString("sv-SE", {
       month: "numeric", // "long" for string, ie september
       day: "numeric",
     });
