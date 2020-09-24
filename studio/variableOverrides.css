@@ -1,12 +1,9 @@
 :root {
   --brand-primary: #cc963e;
   --brand-secondary: #4c7389;
-  /* --font-family-base: "PT Sans Narrow";
-  --font-size-base: 18px; */
+  --font-family-base: "PT Sans Narrow";
+  --font-size-base: 1.1rem;
+  --font-size-small: 0.97rem;
   --main-navigation-color: #262727;
   --default-button-color: #4c7389;
-}
-
-div.Branding_root_39zG3 {
-  padding: 0;
 }

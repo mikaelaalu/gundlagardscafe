@@ -2,16 +2,16 @@ export default {
   name: "footer",
   type: "document",
   title: "Footer",
+  preview: {
+    select: {
+      title: "title",
+    },
+  },
   fields: [
     {
-      name: "backToTop",
+      title: "Titel på dokument",
+      name: "title",
       type: "string",
-      title: "Till toppen",
-    },
-    {
-      name: "infoText",
-      type: "string",
-      title: "Om Gundla",
     },
     {
       name: "follow",

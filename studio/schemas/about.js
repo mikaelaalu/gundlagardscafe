@@ -7,9 +7,10 @@ export default {
       name: "titleAbout",
       type: "string",
       title: "Om oss",
+      description: "Titlen på sidan",
     },
     {
-      title: "Info om oss",
+      title: "Information om oss",
       name: "aboutText",
       type: "array",
       of: [

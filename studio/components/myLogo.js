@@ -1,9 +1,10 @@
 import React from "react";
-import logo from "../static/logo.svg";
+import logo from "../static/log.png";
 import styled from "styled-components";
 
 const Logo = styled.div`
-  width: 20px;
+  width: 25px;
+  height: 25px;
 
   img {
     width: 100%;
