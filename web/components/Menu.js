@@ -24,8 +24,9 @@ const MenuTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-bottom: 85px;
   @media (min-width: 768px) {
+    margin-bottom: 0;
     flex: 1;
     max-width: 400px;
     margin-right: 80px;
