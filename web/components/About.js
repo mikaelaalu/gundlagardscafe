@@ -36,7 +36,6 @@ const AboutTextWrapper = styled.div`
 const About = ({ about, icon }) => {
   const IconSrc = icon.iconArray[1].iconImage.asset._ref;
   const IconAlt = icon.iconArray[1].iconAlt;
-  console.log(about);
 
   return (
     <AboutSection>
