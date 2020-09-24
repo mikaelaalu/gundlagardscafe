@@ -146,7 +146,7 @@ const StartPage = ({ props, icon }) => {
       </FlexTitle>
 
       <Wrapper>
-        <Link href="/openingHours">
+        <Link href="/opening-hours">
           <Box img={imageUrlBuilder(props.imageOpeningHours.asset._ref)}>
             <A>{props.openingHours}</A>
             <ArrowIconDesktop
@@ -155,7 +155,7 @@ const StartPage = ({ props, icon }) => {
             />
           </Box>
         </Link>
-        <Link href="/findUs">
+        <Link href="/find-us">
           <Box img={imageUrlBuilder(props.imageFindUs.asset._ref)}>
             <A>{props.findUs}</A>
             <ArrowIconDesktop

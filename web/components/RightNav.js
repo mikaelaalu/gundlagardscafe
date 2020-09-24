@@ -115,12 +115,12 @@ const RightNav = ({ props, open, setOpen, logoDesktop }) => {
         <CrossOne></CrossOne>
         <CrossTwo></CrossTwo>
       </Exit>
-      <Link href="/openingHours">
+      <Link href="/opening-hours">
         <section>
           <a>{props.openingHours}</a>
         </section>
       </Link>
-      <Link href="/findUs">
+      <Link href="/find-us">
         <section>
           <a>{props.findUs}</a>
         </section>
