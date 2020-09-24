@@ -25,6 +25,7 @@ const Index = (props) => {
 
   return (
     <Layout props={props}>
+
       <StartPage props={props.navigation[0]} icon={props.icon[0]} />
       <InstagramFeed
         props={imageArray}
