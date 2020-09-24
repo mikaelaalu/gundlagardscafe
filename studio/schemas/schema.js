@@ -7,7 +7,6 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 // Object types
 import schedule from "./objects/schedule";
 import dayAndTime from "./objects/dayAndTime";
-import hours from "./objects/hours";
 import icons from "./objects/iconObject";
 
 // Document types
@@ -34,10 +33,9 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     schedule,
     dayAndTime,
-    hours,
     icons,
 
-    /* Your types here! */
+    /* types */
     navigation,
     menu,
     about,

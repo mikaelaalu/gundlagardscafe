@@ -7,13 +7,12 @@ export default {
       name: "titleFindUs",
       type: "string",
       title: "Hitta hit",
-      description: "Titel högst upp på sidan",
+      description: "Titel på sidan",
     },
     {
       title: "Hitta hit information",
       name: "findUsText",
       type: "array",
-      description: "I listan till vänster kan du välja Rubrik eller Text",
       of: [
         {
           type: "block",

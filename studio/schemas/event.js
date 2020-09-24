@@ -12,7 +12,7 @@ export default {
       title: "Beskrivning",
       name: "description",
       type: "array",
-      description: "Beskrivning av evenemang",
+      description: "Information om evenemanget",
       of: [
         {
           type: "block",
@@ -29,7 +29,7 @@ export default {
           name: "dateOfEvent",
           type: "datetime",
           title: "Datum",
-          description: "Lägg till startdatum på eventet",
+          description: "Lägg till datum och starttid på eventet",
           options: {
             dateFormat: "DD MMMM",
             dateTime: "HH:mm",
