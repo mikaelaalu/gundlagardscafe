@@ -133,16 +133,28 @@ const StartPage = ({ props, icon }) => {
 
   return (
     <StartPageSection>
-      <IconMobile src={imageUrlBuilder(iconTreeSrc)} alt={iconTreeAlt} />
+      <IconMobile
+        loading="lazy"
+        src={imageUrlBuilder(iconTreeSrc)}
+        alt={iconTreeAlt}
+      />
 
       <SmallIconDesktop>
-        <img src={imageUrlBuilder(iconFire)} alt={iconFireAlt} />
+        <img loading="lazy" src={imageUrlBuilder(iconFire)} alt={iconFireAlt} />
       </SmallIconDesktop>
 
       <FlexTitle>
-        <BigIconDesktop src={imageUrlBuilder(iconTreeSrc)} alt={iconTreeAlt} />
+        <BigIconDesktop
+          loading="lazy"
+          src={imageUrlBuilder(iconTreeSrc)}
+          alt={iconTreeAlt}
+        />
         <Title>{props.title}</Title>
-        <BigIconDesktop src={imageUrlBuilder(iconTreeSrc)} alt={iconTreeAlt} />
+        <BigIconDesktop
+          loading="lazy"
+          src={imageUrlBuilder(iconTreeSrc)}
+          alt={iconTreeAlt}
+        />
       </FlexTitle>
 
       <Wrapper>
@@ -150,6 +162,7 @@ const StartPage = ({ props, icon }) => {
           <Box img={imageUrlBuilder(props.imageOpeningHours.asset._ref)}>
             <A>{props.openingHours}</A>
             <ArrowIconDesktop
+              loading="lazy"
               src={imageUrlBuilder(iconArrow)}
               alt={iconArrowAlt}
             />
@@ -159,6 +172,7 @@ const StartPage = ({ props, icon }) => {
           <Box img={imageUrlBuilder(props.imageFindUs.asset._ref)}>
             <A>{props.findUs}</A>
             <ArrowIconDesktop
+              loading="lazy"
               src={imageUrlBuilder(iconArrow)}
               alt={iconArrowAlt}
             />
@@ -168,6 +182,7 @@ const StartPage = ({ props, icon }) => {
           <Box img={imageUrlBuilder(props.imageAbout.asset._ref)}>
             <A>{props.about}</A>
             <ArrowIconDesktop
+              loading="lazy"
               src={imageUrlBuilder(iconArrow)}
               alt={iconArrowAlt}
             />
@@ -177,6 +192,7 @@ const StartPage = ({ props, icon }) => {
           <Box img={imageUrlBuilder(props.imageEvent.asset._ref)}>
             <A>{props.event}</A>
             <ArrowIconDesktop
+              loading="lazy"
               src={imageUrlBuilder(iconArrow)}
               alt={iconArrowAlt}
             />
@@ -186,6 +202,7 @@ const StartPage = ({ props, icon }) => {
           <Box img={imageUrlBuilder(props.imageCatering.asset._ref)}>
             <A>{props.catering}</A>
             <ArrowIconDesktop
+              loading="lazy"
               src={imageUrlBuilder(iconArrow)}
               alt={iconArrowAlt}
             />
@@ -195,6 +212,7 @@ const StartPage = ({ props, icon }) => {
           <Box img={imageUrlBuilder(props.imageMeny.asset._ref)}>
             <A>{props.menu}</A>
             <ArrowIconDesktop
+              loading="lazy"
               src={imageUrlBuilder(iconArrow)}
               alt={iconArrowAlt}
             />

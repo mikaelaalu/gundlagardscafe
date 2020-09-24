@@ -134,7 +134,7 @@ const RightNav = ({ props, open, setOpen, logoDesktop }) => {
 
       <Link href="/">
         <LogoDesktop>
-          <Logo src={imageUrlBuilder(iconSrc)} alt={iconAlt} />
+          <Logo loading="lazy" src={imageUrlBuilder(iconSrc)} alt={iconAlt} />
         </LogoDesktop>
       </Link>
 

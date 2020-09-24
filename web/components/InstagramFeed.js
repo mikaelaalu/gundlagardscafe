@@ -62,12 +62,12 @@ const ImageContainer = styled.div`
 
 const InstagramFeed = ({ props, username, profilePic }) => {
   const fourImages = props.slice(0, 6);
-  console.log(profilePic);
+
   return (
     <InstaSection>
       <ImgWrapper>
         <Flex>
-          <ProfilePic src={profilePic} />
+          <ProfilePic loading="lazy" src={profilePic} />
           <a href={"https://www.instagram.com/gundlagardscafe"}>
             <Title>{username}</Title>
           </a>
@@ -75,7 +75,7 @@ const InstagramFeed = ({ props, username, profilePic }) => {
         <ImageContainer>
           {fourImages.map((image, i) => (
             <Container key={i}>
-              <Img src={image.node.display_url} key={i} />
+              <Img loading="lazy" src={image.node.display_url} key={i} />
             </Container>
           ))}
         </ImageContainer>

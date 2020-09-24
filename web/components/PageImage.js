@@ -22,7 +22,7 @@ const ImageWrapper = styled.div`
 const PageImage = (props) => {
   return (
     <ImageWrapper>
-      <img src={props.src} alt={props.alt} />
+      <img loading="lazy" src={props.src} alt={props.alt} />
     </ImageWrapper>
   );
 };
