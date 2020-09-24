@@ -3,6 +3,10 @@ import styled from "styled-components";
 const SingleEventWrapper = styled.div`
   width: 90%;
 
+  h3 {
+    font-weight: bold;
+  }
+
   @media (min-width: 768px) {
     flex: 0.28;
   }

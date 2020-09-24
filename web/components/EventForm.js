@@ -12,6 +12,10 @@ const Container = styled.div`
 const BookEventDiv = styled.div`
   width: 90%;
 
+  h3 {
+    font-weight: bold;
+  }
+
   p:nth-child(2) {
     margin-top: 24px;
   }
