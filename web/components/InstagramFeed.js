@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
-const Title = styled.h3`
-  color: black;
+const Title = styled.p`
+  color: #0076b3;
   margin-top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
   @media (min-width: 768px) {
     width: 34vw;
     margin-top: 0px;
@@ -53,6 +56,8 @@ const Flex = styled.div`
   display: flex;
   height: 60px;
   align-items: center;
+  @media (min-width: 768px) {
+  }
 `;
 
 const ImageContainer = styled.div`
