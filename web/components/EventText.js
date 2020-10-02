@@ -6,7 +6,7 @@ const TextWrapper = styled.div`
 
   h3 {
     font-weight: bold;
-    
+
     @media (min-width: 768px) {
       margin: 0px;
     }
