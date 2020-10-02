@@ -1,0 +1,24 @@
+{
+  "name": "gundlagardscafe",
+  "version": "1.0.0",
+  "description": "School project at yrgo 2020. A website to a café in Gothenburg.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaelaalu/gundlagardscafe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikaelaalu/gundlagardscafe/issues"
+  },
+  "homepage": "https://github.com/mikaelaalu/gundlagardscafe#readme"
+}
