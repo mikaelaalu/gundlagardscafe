@@ -14,7 +14,7 @@ Visit the website <a href="https://gundlagardscafe-rho.vercel.app/"> here </a>
 
 Web Developers:
 
-- <a href="https://github.com/camiwd"> Camilla Kylmänen Sjörén </a>
+- <a href="https://github.com/camkyl"> Camilla Kylmänen Sjörén </a>
 - <a href="https://github.com/mikaelaalu"> Mikaela Lundsgård </a>
 
 Digital Designers:
